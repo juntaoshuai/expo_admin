@@ -8,19 +8,23 @@
 <title>首页--OFweek在线展会后台管理</title>
 <link rel="stylesheet" type="text/css" href="css/base.css"/>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/sea-modules/seajs/sea.js"  id="seajsnode"></script>
+    <script type="text/javascript">
+        seajs.use('./js/main');
+    </script>
 </head>
 
 <body>
 <div class="main_left floatleft">
     <ul>
         <li>
-            <h3 id="zhanwei_nav"><a href="javascript:;"><i class="ico-cz"></i>参展管理<span></span></a></h3>
+            <h3><a href="javascript:;"><i class="ico-cz"></i>参展管理<span></span></a></h3>
             <dl class="sub_menu">
-                <dt><a href="exhibition_info.html" target="_parent">管理展会</a></dt>
-                <dt><a href="exhibition_company.html" target="_parent">参加过的展会</a></dt>
-                <dt><a href="exhibition_note.html" target="_parent">预定展位</a></dt>
+                <dt><a href="exhibition_info.html" target="_parent" class="sub-item">管理展会</a></dt>
+                <dt><a href="exhibition_company.html" target="_parent" class="sub-item">参加过的展会</a></dt>
+                <dt><a href="exhibition_note.html" target="_parent" class="sub-item">预定展位</a></dt>
                 <dt>
-                    <a href="#" target="_parent">设置展位</a>
+                    <a href="#" target="_parent" class="sub-item">设置展位</a>
                 <div class="second_menu">
                     <p> <a href="#" target="_parent">展位一</a></p>
                     <p><a href="#" target="_parent">展位二</a></p>
@@ -29,21 +33,21 @@
             </dl>
         </li>
         <li>
-            <h3 id="product_nav"><a href="javascript:;"><i class="ico-file"></i>资料管理 <span></span></a></h3>
+            <h3><a href="javascript:;"><i class="ico-file"></i>资料管理 <span></span></a></h3>
             <dl class="sub_menu">
-                <dt><a href="exhibition_edit_product.html" target="_parent">产品管理</a></dt>
-                <dt><a href="exhibition_product_manage.html" target="_parent">下载管理</a></dt>
-                <dt><a href="exhibition_fenzu_manage.html" target="_parent">视频管理</a></dt>
-                <dt><a href="exhibition_fenzu_manage.html" target="_parent">图集管理</a></dt>
-                <dt><a href="exhibition_fenzu_manage.html" target="_parent">演讲稿管理</a></dt>
-                <dt><a href="exhibition_fenzu_manage.html" target="_parent">资料回收站</a></dt>
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">产品管理</a></dt>
+                <dt><a href="exhibition_product_manage.html" target="_parent" class="sub-item">下载管理</a></dt>
+                <dt><a href="exhibition_fenzu_manage.html" target="_parent" class="sub-item">视频管理</a></dt>
+                <dt><a href="exhibition_fenzu_manage.html" target="_parent" class="sub-item">图集管理</a></dt>
+                <dt><a href="exhibition_fenzu_manage.html" target="_parent" class="sub-item">演讲稿管理</a></dt>
+                <dt><a href="exhibition_fenzu_manage.html" target="_parent" class="sub-item">资料回收站</a></dt>
             </dl>
         </li>
         <li>
             <h3><a href="javascript:;"><i class="ico-data"></i>数据报告<span></span></a></h3>
             <dl class="sub_menu">
-                <dt><a href="exhibition_edit_product.html" target="_parent">观众数据</a></dt>
-                <dt><a href="exhibition_product_manage.html" target="_parent">浏览量统计</a></dt>
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">观众数据</a></dt>
+                <dt><a href="exhibition_product_manage.html" target="_parent" class="sub-item">浏览量统计</a></dt>
             </dl>
         </li>
         <li><h3><a href="exhibition_tongji.html" target="_parent"><i class="ico-chat"></i>聊天记录</a></h3></li>
@@ -51,9 +55,9 @@
         <li>
             <h3><a href="javascript:;"><i class="ico-account"></i>帐号管理<span></span></a></h3>
             <dl class="sub_menu">
-                <dt><a href="exhibition_edit_product.html" target="_parent">设置客服</a></dt>
-                <dt><a href="exhibition_edit_product.html" target="_parent">帐号安全</a></dt>
-                <dt><a href="exhibition_edit_product.html" target="_parent">联系方式</a></dt>
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">设置客服</a></dt>
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">帐号安全</a></dt>
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">联系方式</a></dt>
             </dl>
         </li>
 
@@ -61,8 +65,6 @@
 
     </ul>
 </div>
-
-<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>

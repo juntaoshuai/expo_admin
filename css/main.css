@@ -50,6 +50,7 @@ h6{ text-align:center;}
 .pass{color:#333;}
 .wait{color:#949494;}
 .nopass{color:#f00;}
+.orange{color:#ff7e00;}
 
 
 *html{
@@ -62,6 +63,10 @@ h6{ text-align:center;}
 {
     width:100%;
     min-width:950px;
+}
+.header{
+    border-top:1px solid #2683c5;
+
 }
 .top_con,.head_con,.main,.footer .foot
 {
@@ -79,13 +84,13 @@ h6{ text-align:center;}
 }
 .top_con
 {
-    padding:10px 0;
+    padding:22px 0;
 }
 .top_con .logo h2
 {
     border-left:solid 1px #ddd;
     padding:10px;
-    font:18px/24px "Microsoft Yahei","黑体";
+    font:20px/24px "Microsoft Yahei","黑体";
     margin-left:15px;
 }
 .top_con .logo .cz_menu strong
@@ -271,6 +276,8 @@ h6{ text-align:center;}
 .main_left ul li h3{
     font-size:12px;
     font-weight:bold;
+    position: relative;
+    height:30px;
 }
 .main_left ul li h3 img
 {
@@ -282,8 +289,6 @@ h6{ text-align:center;}
 .main_left ul li h3 a
 {
     display:block;
-    width:100%;
-    height:100%;
     padding-left:12px;
 }
 .main_left ul li h3 span{
@@ -291,13 +296,19 @@ h6{ text-align:center;}
     height:0;
     font-size:0;
     line-height:0;
-    border-style:solid dashed dashed dashed;
+    border-style:dashed dashed solid dashed;
     border-width:5px;
-    border-color: #bdc2ca transparent transparent transparent;
+    border-color:transparent  transparent #bdc2ca transparent;
     display: inline-block;
-    position: relative;
-    top:3px;
-    margin-left:30px;
+    position:absolute;
+    right:15px;
+    top:6px;
+}
+.main_left ul li h3 span.arrow-down{
+    border-style:solid dashed dashed dashed;
+    border-color:#bdc2ca transparent  transparent  transparent;
+    top:11px;
+
 }
 .main_left ul li h3 a:hover{
     text-decoration: none;
@@ -333,7 +344,10 @@ h6{ text-align:center;}
     padding-left:40px;
 
 }
-.main_left ul li .sub_menu dt a:hover{
+.main_left ul li .sub_menu dt .sub-item{
+    height:30px;
+}
+.main_left ul li .sub_menu dt .sub-item:hover{
     color:#fff;
     background:url("../images/menu_bg.gif") right 3px no-repeat;
     text-decoration: none;
@@ -343,7 +357,10 @@ h6{ text-align:center;}
     line-height:24px;
 }
 
-
+.main_left ul li .second_menu p a{
+    background: url("../images/submenu_bg.gif") 40px center no-repeat;
+    text-indent:12px;
+}
 
 
 .right_wrapper
@@ -878,3 +895,127 @@ label.error
 .share_list ul li p{white-space:nowrap; text-overflow:ellipsis; overflow:hidden;width:54px;}
 .share_way{margin-top:25px;}
 .bdsharebuttonbox{ display:none;}
+/*header*/
+.login_info i{
+    display: inline-block;
+    background: url("../images/ico_login.png") 0 0 no-repeat;
+    vertical-align: middle;
+    margin-right:5px;
+}
+.login_info .ico-loginacc{
+    width:17px;
+    height:20px;
+}
+.login_info .message{
+    position: relative;
+    top:-3px;
+}
+.login_info .login-message{
+    background: url("../images/ico_login.png") 0 -20px no-repeat;
+    display: inline-block;
+    width:26px;
+    height:27px;
+    text-indent:15px;
+    font:12px/17px Microsoft Yahei;
+    color:#fff;
+    position: relative;
+    top:-5px;
+
+}
+.login_info .login-message:hover{
+    text-decoration: none;
+}
+.login_info .ico-question{
+    width:20px;
+    height:20px;
+    background-position:-3px -47px;
+}
+.login_info .exit{
+    display: block;
+    width:68px;
+    height:28px;
+    text-align: center;
+    line-height:30px;
+    border:1px solid #dbdbdb;
+    border-radius:2px;
+    color:#58627e;
+    margin-top:-6px;
+}
+.login_info .exit:hover{
+    border:1px solid #ff7e00;
+    box-shadow: 0 0 6px #ececec;
+    text-decoration: none;
+}
+/*nav*/
+.head_con{
+    background: #007ae1;
+    font-size:14px;
+    color:#fff;
+}
+.nav{
+
+    height:37px;
+
+}
+.nav li{
+    float: left;
+    height:37px;
+    line-height:37px;
+    font-weight:bold;
+    border-left:1px solid #1a88e4;
+    border-right:1px solid #006eca;
+    position: relative;
+
+}
+.nav li.last{
+    border-right:none;
+}
+.nav li a{
+    color:#fff;
+    display: block;
+    padding:0 38px;
+}
+.nav li a:hover{
+    text-decoration:none;
+}
+.head_con p{
+    height:37px;
+    line-height:37px;
+    color: #fff;
+    font-size:14px;
+}
+.nav .zh_list
+{
+    position:absolute;
+    top:30px;
+    left:0;
+    width: 340px;
+    background:#eee;
+    line-height:26px;
+    display:none;
+    z-index: 999;
+}
+
+.nav .zh_list dt
+{
+    font-family:"SimSun";
+    padding:8px 10px;
+    line-height:24px;
+}
+.nav .zh_list dt a:link,.nav .zh_list dt a:visited
+{
+    color:#333;
+}
+.nav .zh_list dt a:hover
+{
+    color:#c00;
+}
+
+.nav li.on .zh_list dt a
+{
+    color:#333;
+}
+.nav li.on .zh_list dt.selected
+{
+    background:#6096cd;
+}
