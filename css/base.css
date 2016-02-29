@@ -1,4 +1,4 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,from,fieldset,input,textarea,p,blockquote,th,td{margin:0; padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0; padding:0;}
 table{ border-collapse:collapse; border-spacing:0;}
 fieldset,img{border:0;}
 img{vertical-align:middle;}
@@ -55,7 +55,7 @@ abbr,acronym{border:0;}
 .w300{width:300px;}
 .w400{width:400px;}
 .w500{width:500px;}
-w600{width:600px;}
+.w600{width:600px;}
 .w700{width:700px;}
 .w800{width:800px;}
 .w{width:100%;}

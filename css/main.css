@@ -2,61 +2,107 @@
 /*2016/2/27 by shuai*/
 /*global css*/
 html{width:100%;height:100%;}
-html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, blockquote, th, td, p, img{margin:0;padding:0;border:0;}
 body{color:#333;font-family:Simsun,Arial; width:100%; margin:0 auto;font-size:12px; background:#fff;}
-table {border-collapse:collapse;border-spacing:0;}
-img {border:0;}
-div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;*zoom:1;}
-p{ line-height:20px; color:#333;  font-weight:400; font-size:12px;}
-ul,li,ol{list-style-type:none;}
-select,input,img,select{vertical-align:middle;outline:none;}
-.clear{clear:both; overflow:hidden;*zoom:1;}
 a{color:#333;}
 a:link,a:visited{color:#333; text-decoration:none;}
 a:hover{ color:#c00;text-decoration:underline;}
-h1{font-size:16px;}
-h2,h3,h4{font-size:14px;}
-h6{ text-align:center;}
 .white,.white a{color:#fff;}
 .white a:link,.white a:visited,.white a:hover{ color:#fff;}
 .floatleft{ float:left;}
 .floatright{ float:right;}
 .nobg{background:none;}
 .noborder{border:none;}
-.pad10{padding-top:10px;}
-.pad15{	padding-top:15px;}
-.pad20{padding-top:20px;}
-.padright30{padding-right:30px;}
-.margin10{margin-top:10px;}
-.margin15{margin-top:15px;}
-.margin20{margin-top:20px;}
-.marleft10{margin-left:10px;}
-.marleft20{margin-left:20px;}
-.mr25{margin-right:25px;}
-.pt30{padding-top:30px;}
+.c999{color:#999;}
 .red{color:#f00;}
 .red a,.red a:link,.red a:visited{color:#f00;}
 .red a:hover{color:#f00; text-decoration:underline;}
-.font14{font-size:14px;}
-.font12{font-size:12px;}
+
+.blue2,.blue2:link,.blue2:visited{color:#2581e5;}
+.blue2:hover{color:#f00; text-decoration:underline;}
+
 .txtline{text-decoration:underline;}
 .gray{ color:#999;}
 .gray2{color:#a2a3a3;}
 .blue{color:#015bb7;}
+.blue2{color:#2581e5;}
 .gray_beizhu{padding:15px;}
-.fn{font-weight:normal;}
-.dn{display:none;}
-.vm{ vertical-align:middle;}
+
 .pass{color:#333;}
 .wait{color:#949494;}
 .nopass{color:#f00;}
 .orange{color:#ff7e00;}
+
+.page-title{
+    font:20px/30px Microsoft Yahei;color:#1d1d2a;
+    margin-bottom:12px;
+}
+/*public btn*/
+.btn_orangea,.btn_orangea:link{
+    width:73px;
+    height:30px;
+    line-height:30px;
+    background: #ff7e00;
+    color:#fff;
+    font-size: 14px;
+    border:none;
+    border-radius:2px;
+
+}
+.btn_blue113:link,.btn_blue150:link{
+    background: #3395e7;
+    text-align: center;
+    font:14px/32px Microsoft Yahei;
+    color:#fff;
+    border-radius:3px;
+    border-bottom:1px solid #3389d3;
+}
+
+.btn_blue113:hover,.btn_blue150:hover,.btn_orangea:hover{
+    text-decoration: none;
+}
+.btn_blue113{
+    width:113px;
+    height:32px;
+}
+.btn_blue150{
+    width:150px;
+    height:48px;
+    line-height:48px;
+}
+/*public table*/
+.pub-table
+{
+    border-top:1px solid #dbdbdb;
+}
+.pub-table tr td
+{
+    line-height:22px;
+    padding:6px 10px;
+    border-bottom:dashed 1px #ccc;
+}
+.pub-table tr.title{
+
+}
+.pub-table tr.title td{
+    background: #f0f3f6;
+    border-right:1px solid #fff;
+
+    border-bottom:none;
+
+}
+
+
+
 
 
 *html{
     background-image:url(about:blank);
     background-attachment:fixed;
 }
+
+
+
+
 
 /*header topbar*/
 .header,.head,.top_bar
@@ -347,7 +393,7 @@ h6{ text-align:center;}
 .main_left ul li .sub_menu dt .sub-item{
     height:30px;
 }
-.main_left ul li .sub_menu dt .sub-item:hover{
+.main_left ul li .sub_menu dt .sub-item:hover,.main_left ul li .sub_menu dt .active{
     color:#fff;
     background:url("../images/menu_bg.gif") right 3px no-repeat;
     text-decoration: none;
@@ -370,14 +416,12 @@ h6{ text-align:center;}
 .position
 {
     padding-bottom:10px;
-    color:#015bb7;
+    color:#313131;
 }
+
 .main_right
 {
-    width:765px;
-    border:solid 1px #ddd;
-    min-height:465px;
-    _height:465px;
+    width:783px;
 }
 .index_title
 {
@@ -409,7 +453,7 @@ h6{ text-align:center;}
 {
     width:462px;
 }
-.btn_blue,.btn_gray
+.btn_gray
 {
     background:url(../images/t2.gif) repeat-x center bottom;
     height:30px;
@@ -564,14 +608,14 @@ h6{ text-align:center;}
 }
 .txt
 {
-    border:solid 1px #ddd;
-    height:32px;
-    line-height:32px;
-    padding:0 3px;
-    width:160px;
+    border:solid 1px #ccc;
+    height:28px;
+    line-height:28px\9;
+    width:232px;
     outline:none;
     font-size:12px;
-    color:#666;
+    color:#999;
+    text-indent:8px;
 }
 .txt220
 {
@@ -741,13 +785,13 @@ h6{ text-align:center;}
 {
     padding:30px 0;
 }
-.search .txt
+/*.search .txt
 {
     width:200px;
     height:25px;
     line-height:25px;
     border-color:#80addb;
-}
+}*/
 .search .search_btn
 {
     width:87px;
@@ -1018,4 +1062,11 @@ label.error
 .nav li.on .zh_list dt.selected
 {
     background:#6096cd;
+}
+
+.ico-plus{
+    width:12px;
+    height:12px;
+    display: inline-block;
+    background:url("../images/ico_plus.png") 0 center no-repeat;
 }

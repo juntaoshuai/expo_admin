@@ -6,6 +6,7 @@
 <meta name="Copyright" content="" />
 <meta name="description" content="" />
 <title>产品管理--OFweek在线展会后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script type="text/javascript" src="js/sea-modules/seajs/sea.js" data-main="../js/main" id="seajsnode"></script>
 </head>
@@ -18,28 +19,26 @@
 <!-- main start -->
 <div class="main pad20">
     <div class="position">
-        <a href="#">OFweek</a> &gt; <a href="#">展会网</a> &gt; <a href="#">展商后台</a> &gt; 资料管理
+        <a href="#" class="blue2">OFweek</a> &gt; <a href="#" class="blue2">展会网</a> &gt; <a href="#" class="blue2">展商后台</a> &gt; 资料管理
     </div>
 	<div class="main_left floatleft">
     	<iframe scrolling="no" frameborder="0" width="100%" height="814" src="left.html"></iframe>
     </div>
     <!--left end -->
     
-    <div class="right_wrapper floatright">
-
-        <div class="main_right">
+    <div class="main_right floatright">
             <h2 class="page-title">产品管理</h2>
+         <div class="page-con">
         	<form action="" method="post">
-        	<div class="info_wrapper">
-            	<div>
-                	<a href="exhibition_edit_product.html" class="btn_gray floatleft s_block">添加新产品</a>
-                    <span>您总共可上传200条产品，您已上传 <strong>4</strong>条产品。</span>
-                    <div class="floatright search">
+            	<div class="clearfix">
+                	<a href="exhibition_edit_product.html" class="btn_blue113 fl mr30"><i class="ico-plus"></i> 添加新产品</a>
+                    <span class="fl c999 mt10">您总共可上传200条产品，您已上传 <strong class="red">4</strong>条产品。</span>
+                    <div class="fr search">
                         <input class="txt marleft10 floatleft" onfocus="if(this.value=='产品名称关键字') this.value='';" onblur="if(this.value == '') this.value='产品名称关键字';" type="text" value="产品名称关键字" name="" />
-                        <input type="submit" class="search_btn floatleft marleft10" value="" name="" />
+                        <input type="submit" class="fl ml5 btn_orangea" value="搜 索" name="" />
                     </div>
                 </div>
-                <table class="gailan_table add_ziliao margin20" cellpadding="0" cellspacing="0" border="0">
+                <table class=" add_ziliao mt10 pub-table" cellpadding="0" cellspacing="0" border="0">
                 	<tr class="title">
                     	<td align="center" width="7%"><input type="checkbox" value="" name="" /></td>
                         <td width="10%"><strong>产品图片</strong></td>
@@ -100,9 +99,9 @@
                         <strong class="txtline"><a href="#">下一页</a></strong>
                     </div>
                 </div>
-            </div>
+
             </form>
-        </div>
+         </div>
     </div>
     <!--right end -->
 </div>
