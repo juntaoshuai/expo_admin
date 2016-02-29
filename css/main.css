@@ -27,8 +27,8 @@ a:hover{ color:#c00;text-decoration:underline;}
 .blue2{color:#2581e5;}
 .gray_beizhu{padding:15px;}
 
-.pass{color:#333;}
-.wait{color:#949494;}
+.pass{color:#5ea000;}
+.wait{color:#ff7e00;}
 .nopass{color:#f00;}
 .orange{color:#ff7e00;}
 
@@ -72,6 +72,7 @@ a:hover{ color:#c00;text-decoration:underline;}
 /*public table*/
 .pub-table
 {
+    border-collapse: inherit;
     border-top:1px solid #dbdbdb;
 }
 .pub-table tr td
@@ -91,9 +92,19 @@ a:hover{ color:#c00;text-decoration:underline;}
 
 }
 
-
-
-
+.btn_grey,.btn_grey:link,.btn_grey:visited
+{
+    width:75px;
+    height:25px;
+    line-height:25px;
+    display: block;
+    background:url(../images/grey_btn.png) 0 0 no-repeat;
+    font-weight:normal;
+    color:#005eae;
+}
+.btn_grey:hover{
+    text-decoration: none;
+}
 
 *html{
     background-image:url(about:blank);
@@ -473,6 +484,7 @@ a:hover{ color:#c00;text-decoration:underline;}
     font-weight:normal;
     color:#333;
 }
+
 .gailan_table
 {
     border:solid 1px #ddd;
