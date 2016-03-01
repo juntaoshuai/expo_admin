@@ -8,17 +8,103 @@
 <title>产品管理--OFweek在线展会后台管理</title>
     <link rel="stylesheet" type="text/css" href="css/base.css"/>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <script type="text/javascript" src="js/sea-modules/seajs/sea.js" data-main="../js/main" id="seajsnode"></script>
+    <script type="text/javascript" src="js/sea-modules/seajs/sea.js" id="seajsnode"></script>
+    <script type="text/javascript">
+        seajs.use('./js/main');
+    </script>
 </head>
 
 <body>
 <!-- header start -->
-<iframe scrolling="no" frameborder="0" width="100%" height="131" src="header.html"></iframe>
+<!--<iframe scrolling="no" frameborder="0" width="100%" height="131" src="header.html"></iframe>-->
+<div class="header">
+    <div class="top_bar">
+        <div class="top_con clearfix">
+            <div class="logo floatleft">
+                <a href="#"><img alt="" src="images/logo.png"></a>
+                <h2>展商后台</h2>
+
+            </div>
+            <div class="login_info fr pt15">
+                <span>欢迎您：<font class="orange">OFweek-expo</font></span>
+                <span class="account"><a href="#"><i class="ico-loginacc"></i>账号管理</a></span>
+                <span class="message"><a href="#"><i class="login-message">1</i>留言</a></span>
+                <span><a href="#"><i class="ico-question"></i>常见问题</a></span>
+                <span><a href="#" class="exit">退出</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="head_con clearfix">
+        <ul class="nav fl">
+            <li><a href="#" target="_blank">首页</a></li>
+            <li>
+                <a href="#" target="_blank">即将举行的展会</a>
+                <dl class="zh_list">
+
+                    <dt>
+                        <a href="/CROE" target="_blank"> 2016中国机器人在线展会 <span>已报名</span></a>
+                    </dt>
+
+                    <dt>
+                        <a href="/instrument" target="_blank"> 2016中国仪器仪表在线展会 <span>已报名</span></a>
+                    </dt>
+
+                    <dt>
+                        <a href="/automation" target="_blank"> 2016中国工业自动化在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/smarthome" target="_blank"> 2016中国智能家居在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/LEDfair" target="_blank"> 2016中国LED照明在线展会</a>
+                    </dt>
+
+                    <dt class="selected">
+                        <a href="/medical" target="_blank"> 2016中国医疗在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/security" target="_blank">  2016中国安防在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/CWOE" target="_blank"> 2016中国可穿戴在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/fiber" target="_blank"> 2016中国光通讯在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/Laser" target="_blank"> 2016中国激光在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/3Dprint" target="_blank"> 2016中国3D打印在线展会</a>
+                    </dt>
+
+                    <dt>
+                        <a href="/solar" target="_blank"> 2016（第二届）中国太阳能光伏在线展</a>
+                    </dt>
+
+                </dl>
+            </li>
+            <li>
+                <a href="#" target="_blank">进行中的展会</a>
+            </li>
+            <li class="last"><a href="#" target="_blank">我的展台</a></li>
+        </ul>
+        <p class="fr mr20">客服电话：0755-83279016 分机 833</p>
+
+    </div>
+</div>
 <!-- header end -->
 
 <!-- main start -->
-<div class="main pad20">
-    <div class="position">
+<div class="main">
+    <div class="position pb10">
         <a href="#" class="blue2">OFweek</a> &gt; <a href="#" class="blue2">展会网</a> &gt; <a href="#" class="blue2">展商后台</a> &gt; 资料管理
     </div>
 	<div class="main_left floatleft">
@@ -32,56 +118,56 @@
         	<form action="" method="post">
             	<div class="clearfix">
                 	<a href="exhibition_edit_product.html" class="btn_blue113 fl mr30"><i class="ico-plus"></i> 添加新产品</a>
-                    <span class="fl c999 mt10">您总共可上传200条产品，您已上传 <strong class="red">4</strong>条产品。</span>
+                    <span class="fl c999 mt10">您总共可上传200条产品，您已上传 <strong class="red mlr6">4</strong>条产品。</span>
                     <div class="fr search">
                         <input class="txt marleft10 floatleft" onfocus="if(this.value=='产品名称关键字') this.value='';" onblur="if(this.value == '') this.value='产品名称关键字';" type="text" value="产品名称关键字" name="" />
                         <input type="submit" class="fl ml5 btn_orangea" value="搜 索" name="" />
                     </div>
                 </div>
-                <table class=" add_ziliao mt10 pub-table" cellpadding="0" cellspacing="0" border="0">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" class=" mt10 pub-table proAdmin-table">
                 	<tr class="title">
-                    	<td align="center" width="7%"><input type="checkbox" value="" name="" /></td>
-                        <td width="10%"><strong>产品图片</strong></td>
-                        <td width="14%" align="center"><strong>产品名称</strong></td>
-                        <td width="14%" align="center"><strong>状态</strong></td>
-                        <td width="10%" align="center"><strong>价格</strong></td>
-                        <td width="13%" align="center"><strong>样品申请数</strong></td>
-                        <td width="14%" align="center"><strong>创建时间</strong></td>
-                        <td width="18%" align="center"><strong>操作</strong></td>
+                    	<td width="4%" class="noborder"><input type="checkbox" value="" name="" /></td>
+                        <td width="10%">产品图片</td>
+                        <td width="27%">产品名称</td>
+                        <td width="12%" >状态</td>
+                        <td width="10%" >价格</td>
+                        <td width="10%">样品申请数</td>
+                        <td width="14%" >创建时间</td>
+                        <td width="13%" class="noborder">操作</td>
                     </tr>
                     <tr>
-                    	<td align="center"><input type="checkbox" value="" name="" /></td>
+                    	<td><input type="checkbox" value="" name="" /></td>
                         <td><img src="images/product.png" alt="" width="50" height="50"></td>
-                        <td align="center">LED灯组</td>
+                        <td class="tl">LED灯组灯组灯组灯组灯组灯组灯组灯组</td>
                         <td class="nopass">审核未通过</td>
                         <td>面议</td>
                         <td>5</td>
                         <td><div class="date">2014-05-16 14:00:05</div></td>
-                        <td align="center">
+                        <td>
                         	<span><a href="exhibition_edit_product.html" class="btn_grey">修改</a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td align="center"><input type="checkbox" value="" name="" /></td>
+                        <td><input type="checkbox" value="" name="" /></td>
                         <td><img src="images/product.png" alt="" width="50" height="50"></td>
-                        <td align="center">LED灯组</td>
+                        <td class="tl">FPC Flexi Circuit Board UV Laser Cutting Machine(Jg15S) </td>
                         <td class="pass">审核通过</td>
                         <td>面议</td>
                         <td>5</td>
                         <td><div class="date">2014-05-16 14:00:05</div></td>
-                        <td align="center">
+                        <td>
                             <span><a href="exhibition_edit_product.html" class="btn_grey">修改</a></span>
                         </td>
                     </tr>
                     <tr>
-                        <td align="center"><input type="checkbox" value="" name="" /></td>
+                        <td><input type="checkbox" value="" name="" /></td>
                         <td><img src="images/product.png" alt="" width="50" height="50"></td>
-                        <td align="center">LED灯组</td>
+                        <td class="tl">FPC Flexi Circuit Board UV Laser Cutting MachineMachine(J</td>
                         <td class="wait">待审核</td>
                         <td>面议</td>
                         <td>5</td>
                         <td><div class="date">2014-05-16 14:00:05</div></td>
-                        <td align="center">
+                        <td>
                             <span><a href="exhibition_edit_product.html" class="btn_grey">修改</a></span>
                         </td>
                     </tr>
@@ -89,9 +175,9 @@
              
              
                 </table>
-                <div class="margin20 clear">
-                	<input type="button" class="btn_gray floatleft del" value="删 除" name="" />
-                    <div class="page floatright">
+                <div class="mt30">
+                	<input type="button" class="btn_grey113 floatleft del" value="X 删 除" name="" />
+                    <div class="page lh32 fr">
                     	<span>总共 <font class="red">20</font> 条记录</span>
                         <!--<a href="#" class="marleft20">上一页</a>-->
                         <span class="marleft20">上一页</span>

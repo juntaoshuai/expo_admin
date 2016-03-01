@@ -10,27 +10,41 @@ a:hover{ color:#c00;text-decoration:underline;}
 .white a:link,.white a:visited,.white a:hover{ color:#fff;}
 .floatleft{ float:left;}
 .floatright{ float:right;}
+div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;*zoom:1;}
 .nobg{background:none;}
-.noborder{border:none;}
+.noborder{border:none !important;}
+.tl{text-align: left !important;}
+.lh32{line-height:32px;}
+.top-1{top:-1px;}
+.top-2{top:-2px;}
+.top-3{top:-3px;}
+.top-4{top:-4px;}
+.top-5{top:-5px;}
+.top1{top:1px;}
+.top2{top:2px;}
+.top3{top:3px;}
+.top4{top:4px;}
+.top5{top:5px;}
+.mlr6{margin:0 6px;}
+
+
 .c999{color:#999;}
 .red{color:#f00;}
 .red a,.red a:link,.red a:visited{color:#f00;}
 .red a:hover{color:#f00; text-decoration:underline;}
-
 .blue2,.blue2:link,.blue2:visited{color:#2581e5;}
 .blue2:hover{color:#f00; text-decoration:underline;}
-
 .txtline{text-decoration:underline;}
 .gray{ color:#999;}
 .gray2{color:#a2a3a3;}
 .blue{color:#015bb7;}
-.blue2{color:#2581e5;}
+.blue3{color:#005eae;}
 .gray_beizhu{padding:15px;}
 
 .pass{color:#5ea000;}
 .wait{color:#ff7e00;}
 .nopass{color:#f00;}
-.orange{color:#ff7e00;}
+.orange,.orange:link,.orange:visited{color:#ff7e00;}
 
 .page-title{
     font:20px/30px Microsoft Yahei;color:#1d1d2a;
@@ -48,7 +62,7 @@ a:hover{ color:#c00;text-decoration:underline;}
     border-radius:2px;
 
 }
-.btn_blue113:link,.btn_blue150:link{
+.btn_blue113,.btn_blue113:link,.btn_blue150:link{
     background: #3395e7;
     text-align: center;
     font:14px/32px Microsoft Yahei;
@@ -69,6 +83,21 @@ a:hover{ color:#c00;text-decoration:underline;}
     height:48px;
     line-height:48px;
 }
+.btn_grey113,.btn_grey113:link {
+    background: #eeeeef;
+    text-align: center;
+    font: 14px/32px Microsoft Yahei;
+    color: #318deb;
+    border-radius: 4px;
+    width: 113px;
+    height: 32px;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+}
+.btn_grey113:hover{
+    text-decoration: none;
+    color:#318deb;
+}
 /*public table*/
 .pub-table
 {
@@ -78,8 +107,9 @@ a:hover{ color:#c00;text-decoration:underline;}
 .pub-table tr td
 {
     line-height:22px;
-    padding:6px 10px;
+   /* padding:6px 10px;*/
     border-bottom:dashed 1px #ccc;
+    text-align:center;
 }
 .pub-table tr.title{
 
@@ -87,8 +117,10 @@ a:hover{ color:#c00;text-decoration:underline;}
 .pub-table tr.title td{
     background: #f0f3f6;
     border-right:1px solid #fff;
-
+    height:40px;
     border-bottom:none;
+    font:14px/40px Microsoft Yahei;
+    color:#000;
 
 }
 
@@ -97,10 +129,11 @@ a:hover{ color:#c00;text-decoration:underline;}
     width:75px;
     height:25px;
     line-height:25px;
-    display: block;
+    display:inline-block;
     background:url(../images/grey_btn.png) 0 0 no-repeat;
     font-weight:normal;
     color:#005eae;
+    border:none;
 }
 .btn_grey:hover{
     text-decoration: none;
@@ -426,8 +459,8 @@ a:hover{ color:#c00;text-decoration:underline;}
 }
 .position
 {
-    padding-bottom:10px;
     color:#313131;
+    line-height:32px;
 }
 
 .main_right
@@ -1081,4 +1114,12 @@ label.error
     height:12px;
     display: inline-block;
     background:url("../images/ico_plus.png") 0 center no-repeat;
+}
+/*产品管理*/
+.proAdmin-table td{
+    height:59px;
+}
+.proAdmin-table img{
+    max-width:60px;
+    max-height:60px;
 }

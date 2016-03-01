@@ -16,10 +16,9 @@ define(function(require,exports,module){
            $(this).find("span").toggleClass("arrow-down").parents("h3").next("dl").slideToggle();
        });
     //菜单选中
-    $(".main_left li .sub-item").click(function(ev){
+    $(".main_left li .sub-item").click(function(){
         $(".main_left li .sub-item").removeClass("active");
         $(this).addClass("active");
-        ev.preventDefault();
 
     })
 
