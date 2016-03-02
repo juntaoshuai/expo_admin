@@ -1078,11 +1078,13 @@ label.error
 .nav .zh_list
 {
     position:absolute;
-    top:30px;
-    left:0;
-    width: 340px;
-    background:#eee;
+    top:37px;
+    left:-1px;
+    width: 285px;
+    background:#fff;
     line-height:26px;
+    border-left:1px solid #dbdbdb;
+    border-right:1px solid #dbdbdb;
     display:none;
     z-index: 999;
 }
@@ -1090,16 +1092,26 @@ label.error
 .nav .zh_list dt
 {
     font-family:"SimSun";
-    padding:8px 10px;
-    line-height:24px;
+    font-size:14px;
+    height:37px;
+    line-height:37px;
+    border-bottom:1px solid #dbdbdb;
+    position: relative;
+    top:-1px;
 }
 .nav .zh_list dt a:link,.nav .zh_list dt a:visited
 {
+    font-weight:normal;
     color:#333;
+    display: block;
+    padding:0 20px;
+
 }
 .nav .zh_list dt a:hover
 {
-    color:#c00;
+    font-weight:bold;
+    color:#007ae1;
+    background: #dfeaf5;
 }
 
 .nav li.on .zh_list dt a

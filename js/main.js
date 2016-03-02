@@ -9,6 +9,10 @@ $(function(){
         $(this).addClass("active");
 
     });
+    //导航下拉列表
+    $(".nav li").hover(function(){
+        $(this).find("dl").toggle();
+    });
     //复制框全选
     (function(){
         $(":checkbox[name=dataId]").click(function() {
