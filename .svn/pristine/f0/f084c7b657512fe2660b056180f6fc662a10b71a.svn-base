@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="Copyright" content="" />
+<meta name="description" content="" />
+<title>首页--OFweek在线展会后台管理</title>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+<div class="footer">
+    <div class="foot">
+        <div class="floatleft">
+            <a href="/help.xhtml" target="_blank">参展指南</a> - <a href="/contact.xhtml" target="_blank">联系我们</a>
+        </div>
+        <div class="floatright">
+            <p>copyright ® OFweek.com 网站所有图片、文字未经许可不得拷贝、复制。</p>
+            <p class="pad15">备案号：粤ICP备06087881号-1</p>
+        </div>
+        <img class="beian" src="http://expo.ofweek.com/images/110.gif">
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
