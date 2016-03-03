@@ -607,11 +607,11 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     text-align:right;
     margin-right:10px;
     line-height:30px;
+    color:#000;
 }
 .set_info h6 img,.view h6 img,.bg_list h6 img
 {
     border:solid 1px #ddd;
-    margin-bottom:8px;
 }
 .img158 img
 {
@@ -687,6 +687,10 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
 .txt220
 {
     width:300px;
+}
+.txt318
+{
+    width:318px;
 }
 .file_choose
 {
@@ -1187,3 +1191,5 @@ label.error
 .atlas-list li p{
     width:82px;
 }
+/*上传图片*/
+.upload_btn{width:92px; height:25px;opacity:0; filter:alpha(opacity=0);margin-left:-92px;}
