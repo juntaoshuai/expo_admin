@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="Copyright" content="" />
+    <meta name="description" content="" />
+    <title>演讲稿管理--OFweek在线展会后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<!-- header start -->
+<iframe scrolling="no" frameborder="0" width="100%" height="106" src="header.html"></iframe>
+<!-- header end -->
+
+<!-- main start -->
+<div class="main">
+    <div class="position pb10">
+        <a href="#" class="blue2">OFweek</a> &gt; <a href="#" class="blue2">展会网</a> &gt; <a href="#" class="blue2">展商后台</a> &gt; 资料管理
+    </div>
+    <div class="main_left floatleft">
+        <iframe scrolling="no" frameborder="0" width="100%" height="814" src="left.html"></iframe>
+    </div>
+    <!--left end -->
+
+    <div class="main_right floatright">
+        <h2 class="page-title">演讲稿管理</h2>
+        <div class="page-con">
+            <form action="" method="post">
+                <div class="clearfix">
+                    <a href="upload_speech.html" class="btn_blue113 fl mr30"><img src="images/ico_upload.png" alt="" class="pr top-1"> 上传演讲稿</a>
+                    <span class="fl c999 mt10"> 您总共可上传10个演讲稿，您已上传<strong class="red mlr6">1</strong>个演讲稿。</span>
+
+                </div>
+                <p class="c999 lh18 mt5">不支持直接上传PPT/PDF文档。为确保演讲稿最佳显示效果，请务必把PPT文档转换成jpg格式图片并有序命名后，压缩上传。<br>
+                    <strong class="red">请参考文档：</strong><a href="" target="_blank" class="blue3">《1分钟轻松把PPT批量转换为JPG图片教程》</a>，压缩包后缀可以是.rar或者zip.</p>
+
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" class=" mt10 pub-table proAdmin-table">
+                    <tr class="title">
+                        <td width="52%" class="tl"><span class=" pl30">演讲稿</span> </td>
+                        <td width="19%">上传时间</td>
+                        <td width="16%" >状态</td>
+                        <td width="13%" class="noborder">操作</td>
+                    </tr>
+                    <tr>
+                        <td class="tl blue3 f13"><p class="pl30">Wulian新发明专利：可实现智能家居无线充电.doc</p></td>
+                        <td>2015-12-03 15:35:11</td>
+                        <td class="nopass">审核未通过</td>
+                        <td>
+                            <span><a href="exhibition_edit_product.html" class="btn_grey">删除</a></span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!--right end -->
+</div>
+<!-- main end -->
+
+
+
+
+<!-- footer start-->
+<iframe scrolling="no" frameborder="0" width="100%" height="180" src="footer.html"></iframe>
+<!-- footer  end-->
+</body>
+</html>
