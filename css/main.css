@@ -1246,3 +1246,26 @@ label.error
     font-size:14px;
     line-height:20px;
 }
+.tabs{
+    border-top:1px solid #dbdbdb;
+    
+}
+.tabs li{
+    float: left;
+    display: inline;
+    border-right:1px solid #fff;
+}
+.tabs li a{
+    display: block;
+    font:14px/40px Microsoft Yahei;
+    color:#000;
+    background: #f0f3f6;
+}
+.tabs li a:hover{
+    text-decoration: none;
+}
+.tabs li.active a{
+    background: #fff;
+    font-weight:bold;
+    color:#007ae1;
+}
