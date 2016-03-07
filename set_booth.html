@@ -48,42 +48,67 @@
                         <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
                     </tr>
                 </table>
-
-
-
-                
-
             </div>
 
             <form action="" method="post">
-                <ul class="set_info pt30 pl10">
+                <ul class="set_info pt30 pl10 set_booth">
                     <li>
-                        <b class="name fn"><span class="red">* </span>标题：</b>
-                        <input class="txt txt318" id="pro_name" maxlength="60" type="text" value="" name="name">
-                    </li>
-                    <li class="mt25">
-                        <b class="name fn"><span class="red">* </span>图片：</b>
-                        <h6 class="floatleft img158">
-                            <div id="pictureDiv">
-                                <img src="http://expo.ofweek.com/exhibitor/booth/images/logo_mr.gif" id="pictureBox">
-                            </div>
-                            <p id="tip_pictureId" class=""></p>
-                        </h6>
-                        <div class="input_con ml30">
-
-                            <input type="button" value="上传" class="btn_grey92">
-                            <input type="file" name="jlfj" class="upload_btn" onchange="document.getElementById('txt').value=this.value">
-                            <input class="upload_text" type="hidden"  id="txt">
-
+                        <b class="name fn"><span class="red">* </span>给您的展位起一个名称：</b>
+                        <div class="set-r fl">
+                            <input class="txt txt318" id="pro_name" maxlength="60" type="text" value="" name="name">
+                            <p class="c999 lh24 f12">这个名称是给您自己看的，以便于参展时选择展位；展位名称不超过15个汉字，例如：太阳能光伏</p>
                         </div>
                     </li>
                     <li class="mt25">
-                        <b class="name fn"><font class="red">* </font>描述：</b>
-                        <textarea class="txtarea_picture" rows="6" cols="57" maxlength="100" id="pro_info" name="remark"></textarea>
+                        <b class="name fn"><span class="red">* </span>新选择客服帐号：</b>
+                        <div class="fl col-account">
+                            <input type="checkbox" name="" class="chk">
+                            <label class="">罗雨晴</label>
+                            <input type="checkbox" name="" class="chk">
+                            <label>罗依凡</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>吴维栋</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>罗雨晴</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>罗依凡</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>吴维栋</label>
+                            <a href="#" class="blue2">设置客服</a>
+                        </div>
+                    </li>
+                    <li class="mt25">
+                        <b class="name fn"><span class="red">* </span>多媒体区播放类型：</b>
+                        <div class="fl col-account">
+                            <input type="radio" name="ptype" >
+                            <label class="">视频</label>
+                            <input type="radio" name="ptype" >
+                            <label>图集</label>
+                        </div>
+                    </li>
+                    <li class="mt25">
+                        <b class="name fn">展台背景：</b>
+                        <div class="fl">
+                            <h6 id="productImgDiv" class="mt15 img100">
+                                <img src="http://expo.ofweek.com/exhibitor/booth/images/logo_mr.gif" id="productImgBox">
+                            </h6>
+                            <p class="tc lh32 p5"> <a href="#" class="blue3">预 览</a></p>
+                        </div>
+                        <div class="fl ml15 mt40">
+                            <p>
+                                <input type="button" value="选择背景" class="btn_grey92 blue2">
+                                <input type="file" name="jlfj" class="upload_btn" onchange="document.getElementById('txt').value=this.value">
+                                <input class="upload_text" type="hidden" id="txt">
+                            </p>
+
+                            <input type="button" value="删除" class="db btn_grey92">
+
+                        </div>
                     </li>
                     <li class="mt50">
                         <b class="name">&nbsp;</b>
-                        <input class="btn_blue113" id="save_btn" type="submit" value="保 存" name="">
+                        <input class="btn_grey150 fl mr20" id="save_btn" type="submit" value="保 存" name="">
+                        <a href="#" class="btn_blue150 fl f16">下一步</a>
                     </li>
                 </ul>
 

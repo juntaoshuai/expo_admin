@@ -90,7 +90,7 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     width:113px;
     height:32px;
 }
-.btn_blue150{
+.btn_blue150,.btn_blue150:link,.btn_blue150:visited{
     width:150px;
     height:48px;
     line-height:48px;
@@ -109,7 +109,8 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     outline: none;
     text-indent: 12px;
 }
-.btn_grey113_noico{
+
+.btn_grey113_noico,.btn_grey150_nodel{
     background-image: none;
     text-indent:0;
 }
@@ -117,6 +118,21 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     text-decoration: none;
     color:#318deb;
 }
+.btn_grey150{
+    background: #eeeeef;
+    text-align: center;
+    font: 16px/47px Microsoft Yahei;
+    color: #318deb;
+    border-radius: 4px;
+    width: 150px;
+    height: 49px;
+    border:none;
+    border-bottom: 2px solid #d9d9d9;
+    cursor: pointer;
+    outline: none;
+    text-indent: 12px;
+}
+
 /*public table*/
 .pub-table
 {
@@ -1197,7 +1213,7 @@ label.error
     vertical-align:top;
     border-bottom:1px solid #dbdbdb;
 }
-.atlas-list li input{
+.atlas-list li input,.chk{
     width:13px;
     height:13px;
 }
@@ -1269,22 +1285,32 @@ label.error
 .tabs td a:hover{
     text-decoration: none;
 }
-/*.tabs li{
-    float: left;
-    display: inline;
-    border-right:1px solid #fff;
+/*set booth*/
+.set_booth b{
+    width:170px;
 }
-.tabs li a{
+.set_booth .col-account{
+    line-height:30px;
+}
+.set_booth .col-account label{
+   /*display: inline-block;
+    vertical-align: middle;*/
+    margin-right:15px;
+    color: #000;
+}
+
+.set_booth .col-account input{
+    /*vertical-align: middle;*/
+    position: relative;
+    top:1px;
+}
+.set_booth .btn_blue150{
+    font-size:16px;
+}
+.set_booth .btn_blue150:hover{
+    background: #007ae1;
+}
+.set_booth .btn_grey92{
     display: block;
-    font:14px/40px Microsoft Yahei;
-    color:#000;
-    background: #f0f3f6;
+    color:#535353;
 }
-.tabs li a:hover{
-    text-decoration: none;
-}
-.tabs li.active a{
-    background: #fff;
-    font-weight:bold;
-    color:#007ae1;
-}*/
