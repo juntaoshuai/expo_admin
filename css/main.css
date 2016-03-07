@@ -80,6 +80,7 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     border-radius:4px;
     border:none;
     border-bottom:1px solid #3389d3;
+    cursor: pointer;
 }
 
 .btn_blue113:hover,.btn_blue150:hover,.btn_orangea:hover{
@@ -153,6 +154,7 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     color:#005eae;
     border:none;
     text-align: center;
+    cursor: pointer;
 }
 .btn_grey92,.btn_grey92:link,.btn_grey92:visited{
     width:92px;
@@ -1133,8 +1135,6 @@ label.error
     height:33px;
     line-height:33px;
     border-bottom:1px solid #dbdbdb;
-    position: relative;
-    top:-1px;
 }
 .nav .zh_list dt a:link,.nav .zh_list dt a:visited
 {
@@ -1234,9 +1234,9 @@ label.error
 {
     border:solid 1px #ddd;
     outline:none;
-    width:480px;
-    min-width:480px;
-    max-width:480px;
+    width:565px;
+    min-width:565px;
+    max-width:565px;
     max-height:300px;
     min-height:300px;
     height:300px;
