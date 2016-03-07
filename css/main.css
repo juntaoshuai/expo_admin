@@ -1247,10 +1247,29 @@ label.error
     line-height:20px;
 }
 .tabs{
-    border-top:1px solid #dbdbdb;
     
 }
-.tabs li{
+.tabs td{
+    background: #f0f3f6;
+    text-align: center;
+    height:40px;
+}
+.tabs td a{
+    display: block;
+    font:14px/40px Microsoft Yahei;
+    color:#000;
+    background: #f0f3f6;
+    border-right:1px solid #fff;
+}
+.tabs td a.active{
+    background: #fff;
+    font-weight:bold;
+    color:#007ae1;
+}
+.tabs td a:hover{
+    text-decoration: none;
+}
+/*.tabs li{
     float: left;
     display: inline;
     border-right:1px solid #fff;
@@ -1268,4 +1287,4 @@ label.error
     background: #fff;
     font-weight:bold;
     color:#007ae1;
-}
+}*/

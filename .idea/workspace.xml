@@ -24,46 +24,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="set_booth.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="set_booth.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/set_booth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.225806">
-              <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.51811594">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Desktop/iedu/main.css">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6704981">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+            <state vertical-scroll-proportion="-7.16129">
+              <caret line="1254" column="16" selection-start-line="1254" selection-start-column="16" selection-end-line="1254" selection-end-column="16" />
               <folding>
-                <marker date="1457339552701" expanded="true" signature="23329:23361" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exhibition_video_manage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibition_video_manage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.387097">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_product.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add_product.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.096775">
-              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#form#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#li#4;n#ul#0;n#form#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1457347996996" expanded="true" signature="16053:16093" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -127,8 +104,9 @@
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/add_product.html" />
         <option value="$PROJECT_DIR$/exhibition_video_manage.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$USER_HOME$/Desktop/iedu/main.css" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/set_booth.html" />
       </list>
     </option>
   </component>
@@ -168,8 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,6 +230,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,7 +415,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="290" column="13" selection-start-line="290" selection-start-column="13" selection-end-line="290" selection-end-column="13" />
           <folding>
-            <marker date="1457327989252" expanded="true" signature="16053:16093" placeholder="{...}" />
+            <marker date="1457347996996" expanded="true" signature="16053:16093" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -462,7 +440,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="290" column="13" selection-start-line="290" selection-start-column="13" selection-end-line="290" selection-end-column="13" />
           <folding>
-            <marker date="1457327989252" expanded="true" signature="16053:16093" placeholder="{...}" />
+            <marker date="1457347996996" expanded="true" signature="16053:16093" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -734,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25905797">
           <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,13 +719,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.645161">
           <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/iedu/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33876812">
+          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding>
+            <marker date="1457339552701" expanded="true" signature="23329:23361" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibition_video_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2753624">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/add_product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.096775">
+        <state vertical-scroll-proportion="2.5108695">
           <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#form#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -757,39 +751,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibition_video_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9344263">
-          <caret line="1134" column="16" selection-start-line="1134" selection-start-column="16" selection-end-line="1134" selection-end-column="16" />
+        <state vertical-scroll-proportion="-7.16129">
+          <caret line="1254" column="16" selection-start-line="1254" selection-start-column="16" selection-end-line="1254" selection-end-column="16" />
           <folding>
-            <marker date="1457327989252" expanded="true" signature="16053:16093" placeholder="{...}" />
+            <marker date="1457347996996" expanded="true" signature="16053:16093" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/set_booth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.225806">
-          <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.51811594">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/iedu/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6704981">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <marker date="1457339552701" expanded="true" signature="23329:23361" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
