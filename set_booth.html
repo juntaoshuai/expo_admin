@@ -34,21 +34,19 @@
         </div>
 
         <div class="page-con">
-            <div class="tabs">
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" class="tabs">
                     <tr>
-                        <td width="12%"><a href="#" class="active">基本设置</a></td>
-                        <td width="11%"><a href="#">公司资料</a></td>
-                        <td width="11%"><a href="#">参展产品</a></td>
-                        <td width="11%"><a href="#">资料下载</a></td>
-                        <td width="9%"><a href="#">视频</a></td>
-                        <td width="9%"><a href="#">图集</a></td>
-                        <td width="13%"><a href="#">演讲稿PPT</a></td>
-                        <td width="12%"><a href="#" class="noborder">公司名片</a></td>
+                        <td width="12%"><a href="set_booth.html" class="active">基本设置</a></td>
+                        <td width="11%"><a href="company_info.html">公司资料</a></td>
+                        <td width="11%"><a href="exhibition_product.html">参展产品</a></td>
+                        <td width="11%"><a href="file_download.html">资料下载</a></td>
+                        <td width="9%"><a href="set_video.html">视频</a></td>
+                        <td width="9%"><a href="set_tuji.html">图集</a></td>
+                        <td width="13%"><a href="set_ppt.html">演讲稿PPT</a></td>
+                        <td width="12%"><a href="set_namecard.html" class="noborder">公司名片</a></td>
                         <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
                     </tr>
                 </table>
-            </div>
 
             <form action="" method="post">
                 <ul class="set_info pt30 pl10 set_booth">
@@ -79,7 +77,7 @@
                     </li>
                     <li class="mt25">
                         <b class="name fn"><span class="red">* </span>多媒体区播放类型：</b>
-                        <div class="fl col-account">
+                        <div class="fl lh30">
                             <input type="radio" name="ptype" >
                             <label class="">视频</label>
                             <input type="radio" name="ptype" >
@@ -89,26 +87,23 @@
                     <li class="mt25">
                         <b class="name fn">展台背景：</b>
                         <div class="fl">
-                            <h6 id="productImgDiv" class="mt15 img100">
+                            <h6 id="productImgDiv" class=" img100">
                                 <img src="http://expo.ofweek.com/exhibitor/booth/images/logo_mr.gif" id="productImgBox">
                             </h6>
                             <p class="tc lh32 p5"> <a href="#" class="blue3">预 览</a></p>
                         </div>
-                        <div class="fl ml15 mt40">
-                            <p>
-                                <input type="button" value="选择背景" class="btn_grey92 blue2">
-                                <input type="file" name="jlfj" class="upload_btn" onchange="document.getElementById('txt').value=this.value">
-                                <input class="upload_text" type="hidden" id="txt">
-                            </p>
-
-                            <input type="button" value="删除" class="db btn_grey92">
-
+                        <div class="fl ml15 mt15">
+                            <a href="javascript:;" class="fileBox">
+                                选择背景
+                                <input type="file" name="jlfj" class="file">
+                            </a>
+                            <input type="button" value="删除" class="db btn_grey92 mt20">
                         </div>
                     </li>
                     <li class="mt50">
                         <b class="name">&nbsp;</b>
                         <input class="btn_grey150 fl mr20" id="save_btn" type="submit" value="保 存" name="">
-                        <a href="#" class="btn_blue150 fl f16">下一步</a>
+                        <a href="company_info.html" class="btn_blue150 fl f16">下一步</a>
                     </li>
                 </ul>
 
