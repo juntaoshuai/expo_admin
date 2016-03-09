@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="Copyright" content="" />
+    <meta name="description" content="" />
+    <title>展位一--OFweek在线展会后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+<!-- header start -->
+<iframe scrolling="no" frameborder="0" width="100%" height="106" src="header.html"></iframe>
+<!-- header end -->
+<!-- main start -->
+<div class="main">
+    <div class="position pb10">
+        <a href="#" class="blue2">OFweek</a> &gt; <a href="#" class="blue2">展会网</a> &gt; <a href="#" class="blue2">展商后台</a> &gt; 设置展位
+    </div>
+    <div class="main_left floatleft">
+        <iframe scrolling="no" frameborder="0" width="100%" height="814" src="left.html"></iframe>
+    </div>
+    <!--left end -->
+
+    <div class="main_right floatright">
+        <div class="page-hd">
+            <h2 class="page-title">展位一</h2>
+        </div>
+
+        <div class="page-con">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="tabs">
+                <tr>
+                    <td width="12%"><a href="set_booth.html">基本设置</a></td>
+                    <td width="11%"><a href="company_info.html">公司资料</a></td>
+                    <td width="11%"><a href="exhibition_product.html">参展产品</a></td>
+                    <td width="11%"><a href="file_download.html">资料下载</a></td>
+                    <td width="9%"><a href="set_video.html">视频</a></td>
+                    <td width="9%"><a href="set_tuji.html">图集</a></td>
+                    <td width="13%"><a href="set_ppt.html">演讲稿PPT</a></td>
+                    <td width="12%"><a href="set_namecard.html" class="noborder active">公司名片</a></td>
+                    <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
+                </tr>
+            </table>
+            <form method="post" id="boothBusinessCardForm" action="/exhibitor/booth/businessCard/save.xhtml" novalidate="novalidate">
+
+                <input type="hidden" name="nonce" value="eLAs2f"><input type="hidden" name="ak" value="6E448EC14FDB62F028F5D709C1774C43163623CF">
+                <input type="hidden" value="941" name="id">
+                <input type="hidden" id="boothId" value="1001" name="boothId">
+                <p class="gray ml30 mt20">
+                    <span class="red">* </span> 如果贵公司希望在展台放置电子名片供所有观众查阅，请勾选“显示名片”后设置名片信息。由于所有观众均可收藏名片，请谨慎填写。
+                </p>
+                <p class="blue4 ml44 mt17">
+                    <input id="show_btn" type="checkbox" value="0" name="hide" checked="" class="vm">
+                    显示名片
+                </p>
+                <div class="info_wrapper">
+                    <ul id="" class="set_info set-card">
+                        <li>
+                            <b class="companyName fn"><font class="red">* </font>公司：</b> <span style="line-height: 34px;">OFweek中国高科技行业门户</span>
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn"><font class="red">* </font>地址：</b>
+                            <div class="pull_down floatleft font12 pull_down_gray">
+                                <select name="" id="country" class="mr13">
+                                    <option value="zh_CN" selected>中国</option>
+                                    <option value="-1" >中国以外地区</option>
+                                </select>
+                                <select name="" id="province">
+                                    <option value="CNANH" >安徽</option>
+                                    <option value="CNBEI" >北京 </option>
+                                    <option value="CNFUJ" >福建</option>
+                                    <option value="CNGAN" >甘肃</option>
+                                    <option value="CNGUA" selected>广东</option>
+                                    <option value="CNGUN" >广西</option>
+                                    <option value="CNGUI" >贵州</option>
+                                    <option value="CNHAI" >海南</option>
+                                    <option value="CNHEB" >河北</option>
+                                    <option value="CNHEN" >河南</option>
+                                    <option value="CNHEI" >黑龙江</option>
+                                    <option value="CNHUB" >湖北</option>
+                                    <option value="CNHUN" >湖南</option>
+                                    <option value="CNJIL" >吉林</option>
+                                    <option value="CNJIA" >江苏</option>
+                                    <option value="CNJIN" >江西</option>
+                                    <option value="CNLIA" >辽宁</option>
+                                    <option value="CNNEI" >内蒙</option>
+                                    <option value="CNNIN" >宁夏</option>
+                                    <option value="CNQIN" >青海</option>
+                                    <option value="CNSHN" >山东</option>
+                                    <option value="CNSHX" >山西</option>
+                                    <option value="CNSHA" >陕西</option>
+                                    <option value="CNSHG" >上海</option>
+                                    <option value="CNSIC" >四川</option>
+                                    <option value="CNTIA" >天津</option>
+                                    <option value="CNXIZ" >西藏</option>
+                                    <option value="CNXIN" >新疆</option>
+                                    <option value="CNYUN" >云南</option>
+                                    <option value="CNZHE" >浙江</option>
+                                    <option value="CNCHO" >重庆</option>
+                                    <option value="CNTAW" >台湾</option>
+                                    <option value="CNHNK" >香港</option>
+                                    <option value="CNMAC" >澳门</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="mt25">
+                            <b class="name">&nbsp;</b>
+                            <input class="txt" id="address" type="text" style="width:364px;" value="深圳市南山区高新园中科大厦16F" name="address.detail">
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn"><font class="red">* </font>联系人：</b>
+                            <input class="txt txt318" id="contactsName" type="text" value="罗雨晴" name="contacts.name">
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn"><font class="red">* </font>性别：</b>
+                            <p class="floatleft lh34">
+                                <input class="radio_btn vm" type="radio" value="0" name="contacts.sex">
+                                先生
+                                <input class="radio_btn vm" type="radio" value="1" name="contacts.sex" checked="checked">
+                                女士
+                            </p>
+                            <div id="tip_contacts.sex" class="floatleft"></div>
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn"><font class="red">* </font>职位：</b>
+                            <input class="txt txt318" id="zhiwei" type="text" value="客服" name="contacts.job">
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn"><font class="red">* </font>座机：</b>
+                            <input class="txt txt318 mr3" id="tel" type="text" value="" name="contacts.telephone">
+                            <input type="checkbox" name="" class="vm"><label class="f12 ml5">公开</label>
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn"><font class="red">* </font>邮箱：</b>
+                            <input class="txt txt318 mr3" id="contacts.email" type="text" value="ofweek_expo@sina.com" name="contacts.email">
+                            <input type="checkbox" name="" class="vm"><label class="f12 ml5">公开</label>
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn">传真：</b>
+                            <input class="txt txt318" id="contactsFax" type="text" value="" name="contacts.fax">
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn">手机：</b>
+                            <input class="txt txt318 mr3" id="contactsMobilePhone" type="text" value="13823589195" name="contacts.mobilePhone">
+                            <input type="checkbox" name="" class="vm"><label class="f12 ml5">公开</label>
+                        </li>
+                        <li class="mt25">
+                            <b class="name fn">公司网址：</b>
+                            <input class="txt txt318" id="companyWebSite" type="text" value="" name="companyWebSite">
+                        </li>
+                        <li class="mt50">
+                            <b class="name fn">&nbsp;</b>
+                            <a href="company_info.html" class="btn_grey113_nodel fl mr20" style="color:#318deb;font-size: 16px;">上一步</a>
+                            <input class="btn_opera fl mr20" id="save_btn"  type="submit" value="保 存" name="">
+                            <a href="set_namecard.html" class="btn_opera fl" >下一步</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--right end -->
+</div>
+<!-- main end -->
+
+
+
+
+<!-- footer start-->
+<iframe scrolling="no" frameborder="0" width="100%" height="180" src="footer.html"></iframe>
+<!-- footer  end-->
+</body>
+</html>

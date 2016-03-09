@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Title</title>
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script>
+        $(function(){
+
+            $(".getPerson").click(function(){
+                $.post(
+                        'person.txt',//里面内容直接写{"name":"tao","age":27,"hobby":"sing"}，前面不要写val=
+                        function(data){
+                           var data=$.parseJSON(data);  //jquery方式，接受一个JSON字符串，返回解析后的对象。
+                            // var data=eval("("+data+")"); //js方式，这里两个全部要用双引号
+                         $(".name").html(data.name);
+                            $(".age").html(data.age);
+                            $(".hobby").html(data.hobby);
+
+                        },"text" //这里类型可以省略不写，如果写，就写text类型，别的不行。
+                )
+            });
+
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="得到数据" class="getPerson"><br><br>
+<p>姓名：<span class="name"></span></p>
+<p>年龄：<span class="age"></span></p>
+<p>爱好：<span class="hobby"></span></p>
+<form action="www.baidu.com" method="get">
+    <input type="file" name="" id="" value="上传资料">
+</form>
+</body>
+</html>

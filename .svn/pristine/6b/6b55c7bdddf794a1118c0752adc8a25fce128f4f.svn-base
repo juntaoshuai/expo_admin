@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="Copyright" content="" />
+    <meta name="description" content="" />
+    <title>展位一--OFweek在线展会后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+<!-- header start -->
+<iframe scrolling="no" frameborder="0" width="100%" height="106" src="header.html"></iframe>
+<!-- header end -->
+<!-- main start -->
+<div class="main">
+    <div class="position pb10">
+        <a href="#" class="blue2">OFweek</a> &gt; <a href="#" class="blue2">展会网</a> &gt; <a href="#" class="blue2">展商后台</a> &gt; 设置展位
+    </div>
+    <div class="main_left floatleft">
+        <iframe scrolling="no" frameborder="0" width="100%" height="814" src="left.html"></iframe>
+    </div>
+    <!--left end -->
+
+    <div class="main_right floatright">
+        <div class="page-hd">
+            <h2 class="page-title">展位一</h2>
+        </div>
+        <div class="page-con exhiPro_con oh">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" class="tabs">
+                    <tr>
+                        <td width="12%"><a href="set_booth.html">基本设置</a></td>
+                        <td width="11%"><a href="company_info.html">公司资料</a></td>
+                        <td width="11%"><a href="exhibition_product.html" class="active">参展产品</a></td>
+                        <td width="11%"><a href="file_download.html">资料下载</a></td>
+                        <td width="9%"><a href="set_video.html">视频</a></td>
+                        <td width="9%"><a href="set_tuji.html">图集</a></td>
+                        <td width="13%"><a href="set_ppt.html">演讲稿PPT</a></td>
+                        <td width="12%"><a href="set_namecard.html" class="noborder">公司名片</a></td>
+                        <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
+                    </tr>
+                </table>
+          <p class="tips mt15">
+              说明：<br/>
+              产品分组：若没有产品分组，可不填写分组名；<br/>
+              关于排序：请填写1以上的数字，序号越小越靠前；<br/>
+              推荐：您可以勾选热门产品进行推荐，所推荐的产品将在您展台的“推荐展品”中展示。
+          </p>
+
+            <form action="" method="post" class="mt30">
+                <h3 class="f14 c000 fb pl10">展台推荐：<a href="add_product.html" target="_blank" class="btn_grey92">添加产品</a></h3>
+                <ul class="atlas-list mt20 clearfix pl10">
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <span class="mt7">审核未通过</span>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <span class="mt7">审核未通过</span>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                 <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="group-list mt40 pl10">
+                    <li><label class="f14 c000 fb">产品分组一：</label><input type="text" value="输入分组名"><a href="add_product.html" target="_blank" class="btn_grey92 ml20">添加产品</a></li>
+                </ul>
+                <h3 class="f14 c000 fb group"></h3>
+                <ul class="atlas-list mt20 clearfix pl10">
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <span class="mt7">审核未通过</span>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <span class="mt7">审核未通过</span>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/logo100.gif" alt="">
+                        <div class="atlas-con mt10 fl">
+                            <div class="fr">
+                                <label for="" class="lh16 c000">TCL通讯市场情报专家</label>
+                                <div class="sort">排序 <input type="text" value="2"></div>
+                                <a href="" class="btn_grey mt9">移除</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="add-proGroup mt50 pl10">
+                    <a href="#" class="f14 c06f_link fb">+ 增加产品分组</a>
+                    <ul class="group-list mt30 pb30">
+                        <li><label class="f14 c000 fb">产品分组二：</label><input type="text" value="输入分组名"><a href="add_product.html" target="_blank" class="btn_grey92 ml20">添加产品</a><a
+                                href="#" class="remove-group">移除分组</a></li>
+                    </ul>
+                </div>
+                <p class="mt50" style="margin-left:179px;">
+                    <a href="company_info.html" class="btn_grey113_nodel fl mr20" style="color:#318deb;font-size: 16px;">上一步</a>
+                    <input class="btn_opera fl mr20" id="save_btn"  type="submit" value="保 存" name="">
+                    <a href="file_download.html" class="btn_opera fl" >下一步</a>
+                </p>
+
+
+            </form>
+        </div>
+    </div>
+    <!--right end -->
+</div>
+<!-- main end -->
+
+
+
+
+<!-- footer start-->
+<iframe scrolling="no" frameborder="0" width="100%" height="180" src="footer.html"></iframe>
+<!-- footer  end-->
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="Copyright" content="" />
+<meta name="description" content="" />
+<title>视频管理--OFweek在线展会后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<!-- header start -->
+<iframe scrolling="no" frameborder="0" width="100%" height="106" src="header.html"></iframe>
+<!-- header end -->
+
+<!-- main start -->
+<div class="main">
+    <div class="position pb10">
+        <a href="#" class="blue2">OFweek</a> &gt; <a href="#" class="blue2">展会网</a> &gt; <a href="#" class="blue2">展商后台</a> &gt; 资料管理
+    </div>
+	<div class="main_left floatleft">
+    	<iframe scrolling="no" frameborder="0" width="100%" height="814" src="left.html"></iframe>
+    </div>
+    <!--left end -->
+    
+    <div class="main_right floatright">
+            <h2 class="page-title">视频管理</h2>
+         <div class="page-con">
+        	<form action="" method="post">
+            	<div class="clearfix lh32">
+                	<a href="upload_video.html" class="btn_blue113 fl mr30"><img src="images/ico_video.png" alt=""> 上传视频</a>
+                    <span class="fl c999">支持格式：.flv .mp4；您总共可上传30条视频，您已上传<strong class="red mlr6">6</strong>条视频。</span>
+                    <p class="fr"><a href="#" class="orange"><img src="images/ico_question.png" alt="" class="pr top-1 mr5">视频无法播放解决办法</a></p>
+                </div>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" class=" mt10 pub-table proAdmin-table">
+                	<tr class="title">
+                    	<td width="7%" class="noborder"><input type="checkbox" value="" id="checkAll" name="checkAll"></td>
+                        <td width="52%" class="tl">视频</td>
+                        <td width="26%" >状态</td>
+                        <td width="15%" class="noborder">操作</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="" name="dataId"></td>
+                        <td class="tl blue3">Wulian新发明专利：可实现智能家居无线充电.doc</td>
+                        <td class="nopass">审核未通过</td>
+                        <td>
+                        	<span><a href="exhibition_edit_product.html" class="btn_grey">修改</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="" name="dataId"></td>
+                        <td class="tl blue3">FPC Flexi Circuit Board UV Laser Cutting Machine(Jg15S) </td>
+                        <td class="pass">审核通过</td>
+                        <td>
+                            <span><a href="exhibition_edit_product.html" class="btn_grey">修改</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="" name="dataId"></td>
+                        <td class="tl blue3">物联智慧宣传彩页.pdf</td>
+                        <td class="wait">待审核</td>
+                        <td>
+                            <span><a href="exhibition_edit_product.html" class="btn_grey">修改</a></span>
+                        </td>
+                    </tr>
+              
+             
+             
+                </table>
+                <div class="mt30">
+                	<input type="button" class="btn_grey113 floatleft del" value="删 除" name="" id="delVideo"/>
+                    <div class="page lh32 fr">
+                    	<span>总共 <font class="red">20</font> 条记录</span>
+                        <!--<a href="#" class="marleft20">上一页</a>-->
+                        <span class="marleft20">上一页</span>
+                        <span class="red"><font>1</font>/<font>6</font></span>
+                        <strong class="txtline"><a href="#">下一页</a></strong>
+                    </div>
+                </div>
+
+            </form>
+         </div>
+    </div>
+    <!--right end -->
+</div>
+<!-- main end -->
+
+
+
+
+<!-- footer start-->
+<iframe scrolling="no" frameborder="0" width="100%" height="180" src="footer.html"></iframe>
+<!-- footer  end-->
+</body>
+</html>

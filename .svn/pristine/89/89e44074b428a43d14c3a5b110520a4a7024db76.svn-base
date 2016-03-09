@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="Copyright" content="" />
+    <meta name="description" content="" />
+    <title>展位一--OFweek在线展会后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+<!-- header start -->
+<iframe scrolling="no" frameborder="0" width="100%" height="106" src="header.html"></iframe>
+<!-- header end -->
+<!-- main start -->
+<div class="main">
+    <div class="position pb10">
+        <a href="#" class="blue2">OFweek</a> &gt; <a href="#" class="blue2">展会网</a> &gt; <a href="#" class="blue2">展商后台</a> &gt; 设置展位
+    </div>
+    <div class="main_left floatleft">
+        <iframe scrolling="no" frameborder="0" width="100%" height="814" src="left.html"></iframe>
+    </div>
+    <!--left end -->
+
+    <div class="main_right floatright">
+        <div class="page-hd">
+            <h2 class="page-title">展位一</h2>
+        </div>
+
+        <div class="page-con">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" class="tabs">
+                    <tr>
+                        <td width="12%"><a href="set_booth.html" class="active">基本设置</a></td>
+                        <td width="11%"><a href="company_info.html">公司资料</a></td>
+                        <td width="11%"><a href="exhibition_product.html">参展产品</a></td>
+                        <td width="11%"><a href="file_download.html">资料下载</a></td>
+                        <td width="9%"><a href="set_video.html">视频</a></td>
+                        <td width="9%"><a href="set_tuji.html">图集</a></td>
+                        <td width="13%"><a href="set_ppt.html">演讲稿PPT</a></td>
+                        <td width="12%"><a href="set_namecard.html" class="noborder">公司名片</a></td>
+                        <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
+                    </tr>
+                </table>
+
+            <form action="" method="post">
+                <ul class="set_info pt30 pl10 set_booth">
+                    <li>
+                        <b class="name fn"><span class="red">* </span>给您的展位起一个名称：</b>
+                        <div class="set-r fl">
+                            <input class="txt txt318" id="pro_name" maxlength="60" type="text" value="" name="name">
+                            <p class="c999 lh24 f12">这个名称是给您自己看的，以便于参展时选择展位；展位名称不超过15个汉字，例如：太阳能光伏</p>
+                        </div>
+                    </li>
+                    <li class="mt25">
+                        <b class="name fn"><span class="red">* </span>新选择客服帐号：</b>
+                        <div class="fl col-account">
+                            <input type="checkbox" name="" class="chk">
+                            <label class="">罗雨晴</label>
+                            <input type="checkbox" name="" class="chk">
+                            <label>罗依凡</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>吴维栋</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>罗雨晴</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>罗依凡</label>
+                            <input type="checkbox" name=""  class="chk">
+                            <label>吴维栋</label>
+                            <a href="#" class="blue2">设置客服</a>
+                        </div>
+                    </li>
+                    <li class="mt25">
+                        <b class="name fn"><span class="red">* </span>多媒体区播放类型：</b>
+                        <div class="fl lh30">
+                            <input type="radio" name="ptype" >
+                            <label class="">视频</label>
+                            <input type="radio" name="ptype" >
+                            <label>图集</label>
+                        </div>
+                    </li>
+                    <li class="mt25">
+                        <b class="name fn">展台背景：</b>
+                        <div class="fl">
+                            <h6 id="productImgDiv" class=" img100">
+                                <img src="http://expo.ofweek.com/exhibitor/booth/images/logo_mr.gif" id="productImgBox">
+                            </h6>
+                            <p class="tc lh32 p5"> <a href="#" class="blue3">预 览</a></p>
+                        </div>
+                        <div class="fl ml15 mt15">
+                            <a href="javascript:;" class="fileBox">
+                                选择背景
+                                <input type="file" name="jlfj" class="file">
+                            </a>
+                            <input type="button" value="删除" class="db btn_grey92 mt20">
+                        </div>
+                    </li>
+                    <li class="mt50">
+                        <b class="name">&nbsp;</b>
+                        <input class="btn_grey150 fl mr20" id="save_btn" type="submit" value="保 存" name="">
+                        <a href="company_info.html" class="btn_blue150 fl f16">下一步</a>
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+    </div>
+    <!--right end -->
+</div>
+<!-- main end -->
+
+
+
+
+<!-- footer start-->
+<iframe scrolling="no" frameborder="0" width="100%" height="180" src="footer.html"></iframe>
+<!-- footer  end-->
+</body>
+</html>

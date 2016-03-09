@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="Copyright" content="" />
+<meta name="description" content="" />
+<title>首页--OFweek在线展会后台管理</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div class="main_left floatleft">
+    <ul>
+        <li>
+            <h3><a href="javascript:;"><i class="ico-cz"></i>参展管理<span></span></a></h3>
+            <dl class="sub_menu">
+                <dt><a href="exhibition_info.html" target="_parent" class="sub-item">管理展会</a></dt>
+                <dt><a href="exhibition_company.html" target="_parent" class="sub-item">参加过的展会</a></dt>
+                <dt><a href="exhibition_note.html" target="_parent" class="sub-item">预定展位</a></dt>
+                <dt>
+                    <a href="#" target="_parent" class="sub-item">设置展位</a>
+                <div class="second_menu">
+                    <p> <a href="set_booth.html" target="_parent">展位一</a></p>
+                    <p><a href="#" target="_parent">展位二</a></p>
+                </div>
+                </dt>
+            </dl>
+        </li>
+        <li>
+            <h3><a href="javascript:;"><i class="ico-file"></i>资料管理 <span></span></a></h3>
+            <dl class="sub_menu">
+                <dt><a href="exhibition_product_manage.html" target="_parent" class="sub-item">产品管理</a></dt>
+                <dt><a href="exhibition_file_manage.html" target="_parent" class="sub-item">下载管理</a></dt>
+                <dt><a href="exhibition_video_manage.html" target="_parent" class="sub-item">视频管理</a></dt>
+                <dt><a href="exhibition_tuji_manage.html" target="_parent" class="sub-item">图集管理</a></dt>
+                <dt><a href="exhibition_speech_manage.html" target="_parent" class="sub-item">演讲稿管理</a></dt>
+                <dt><a href="recycle.html" target="_parent" class="sub-item">资料回收站</a></dt>
+            </dl>
+        </li>
+        <li>
+            <h3><a href="javascript:;"><i class="ico-data"></i>数据报告<span></span></a></h3>
+            <dl class="sub_menu">
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">观众数据</a></dt>
+                <dt><a href="exhibition_product_manage.html" target="_parent" class="sub-item">浏览量统计</a></dt>
+            </dl>
+        </li>
+        <li><h3><a href="exhibition_tongji.html" target="_parent"><i class="ico-chat"></i>聊天记录</a></h3></li>
+        <li><h3><a href="exhibition_tongji.html" target="_parent"><i class="ico-message"></i>留言</a></h3></li>
+        <li class="noborder">
+            <h3><a href="javascript:;"><i class="ico-account"></i>帐号管理<span></span></a></h3>
+            <dl class="sub_menu">
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">设置客服</a></dt>
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">帐号安全</a></dt>
+                <dt><a href="exhibition_edit_product.html" target="_parent" class="sub-item">联系方式</a></dt>
+            </dl>
+        </li>
+
+
+
+    </ul>
+</div>
+
+</body>
+</html>
