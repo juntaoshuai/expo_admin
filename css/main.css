@@ -1524,3 +1524,6 @@ label.error
     height: 28px;
     border:1px solid #ccc;
 }
+.window-box{
+    padding:20px
+}

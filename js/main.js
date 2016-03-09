@@ -58,12 +58,19 @@ $(function(){
     $.delPopup("#delVideo","此视频已在展位中，您确定要删除吗？")
     $.delPopup("#delFile","此资料已在展位中，您确定要删除吗？");
     $.delPopup("#delPic","此图片已在展位中，您确定要删除吗？");
+//当前页面打开一个新窗口
+
+
 
 
 
 
 });
 
+function open_window(url,width,height){
+    window.open(url,"subWnd","Toolbar=1,menubar=0,scrollbars=1,resizable=1,width="+width+",height="+height+",top=75,left=150");
+
+}
 
 
 
