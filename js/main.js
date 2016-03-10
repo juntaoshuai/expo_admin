@@ -112,6 +112,10 @@ $(function(){
     });
 
 //展位基本设置时，保存用户选择视频还是图集
+    $("#nextStep").click(function(){
+        setCookie("ptype",$("input[name=ptype]:checked").val(),30);
+
+    });
 
 
 
@@ -122,11 +126,28 @@ $(function(){
 
 });
 
+//cookie存储和取值
+function setCookie(key, value, t) {
+    var oDate = new Date();
+    oDate.setDate( oDate.getDate() + t );
+    document.cookie = key + '=' + value + ';expires=' + oDate.toGMTString();
+}
+
+function getCookie(key) {
+    var arr1 = document.cookie.split('; ');
+    for (var i=0; i<arr1.length; i++) {
+        var arr2 = arr1[i].split('=');
+        if ( arr2[0] == key ) {
+            return decodeURI(arr2[1]);
+        }
+    }
+}
+
+
 function open_window(url,width,height){
     window.open(url,"subWnd","Toolbar=1,menubar=0,scrollbars=1,resizable=1,width="+width+",height="+height+",top=75,left=150");
 
 }
-
 
 
 

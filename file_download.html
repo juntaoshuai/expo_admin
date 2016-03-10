@@ -110,9 +110,9 @@
                     </tr>
                 </table>
                 <p class="mt40" style="margin-left:179px;">
-                    <a href="company_info.html" class="btn_grey113_nodel fl mr20" style="color:#318deb;font-size: 16px;">上一步</a>
-                    <input class="btn_opera fl mr20" id="save_btn"  type="submit" value="保 存" name="">
-                    <a href="file_download.html" class="btn_opera fl" >下一步</a>
+                    <a href="company_info.html" class="btn_grey150 fl mr20">上一步</a>
+                    <input class="btn_blue150 fl mr20" id="save_btn"  type="submit" value="保 存" name="">
+                    <a href="#" class="btn_blue150 fl" id="nextStep">下一步</a>
                 </p>
             </form>
         </div>
@@ -127,5 +127,16 @@
 <!-- footer start-->
 <iframe scrolling="no" frameborder="0" width="100%" height="180" src="footer.html"></iframe>
 <!-- footer  end-->
+<script type="text/javascript">
+    $("#nextStep").click(function(){
+        var ptype=getCookie("ptype");
+        if(ptype==0){
+            $(this).attr("href","set_video.html");
+        }else{
+            $(this).attr("href","set_tuji.html");
+        }
+
+    });
+</script>
 </body>
 </html>

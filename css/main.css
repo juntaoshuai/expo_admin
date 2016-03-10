@@ -86,7 +86,7 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     border-radius:2px;
 
 }
-.btn_blue113,.btn_blue113:link,.btn_blue113:visited,.btn_blue150:link,.btn_blue150:visited{
+.btn_blue113,.btn_blue113:link,.btn_blue113:visited,.btn_blue150,.btn_blue150:link,.btn_blue150:visited{
     background: #3395e7;
     text-align: center;
     font:14px/32px Microsoft Yahei;
@@ -108,6 +108,7 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     width:150px;
     height:48px;
     line-height:48px;
+    font-size:16px;
 }
 
 .btn_opera,.btn_opera:link,.btn_opera:visited {
@@ -121,6 +122,7 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     border: none;
     border-bottom: 1px solid #3389d3;
     display: block;
+    cursor: pointer;
 }
 .btn_opera:hover{
     text-decoration: none;
@@ -152,7 +154,7 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     text-decoration: none;
     color:#318deb;
 }
-.btn_grey150{
+.btn_grey150,.btn_grey150:link,.btn_grey150:visited{
     background: #eeeeef;
     text-align: center;
     font: 16px/47px Microsoft Yahei;
@@ -165,6 +167,13 @@ div:after, ul:after, li:after {clear: both;content: " ";display: block;font-size
     cursor: pointer;
     outline: none;
     text-indent: 12px;
+    transition:all 1s;
+}
+.btn_grey150:hover{
+    text-decoration: none;
+    background: #3395e7;
+    border-bottom-color: #3389d3;
+    color:#fff;
 }
 
 /*public table*/
@@ -1446,6 +1455,7 @@ label.error
     text-align: center;
     display: block;
     color:#fff;
+    margin-bottom:2px;
 }
 .exhiPro_con .atlas-list .sort{
     color:#868686;
@@ -1484,7 +1494,7 @@ label.error
 }
 .group-list  li .remove-group{
     font-size:14px;
-    color:#868686;
+    color:#005eae;
     margin-left:34px;
 }
 .group-list  li .remove-group:hover{
