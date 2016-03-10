@@ -46,15 +46,17 @@
                         <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
                     </tr>
                 </table>
-          <p class="tips mt15">
-              说明：<br/>
-              产品分组：若没有产品分组，可不填写分组名；<br/>
-              关于排序：请填写1以上的数字，序号越小越靠前；<br/>
-              推荐：您可以勾选热门产品进行推荐，所推荐的产品将在您展台的“推荐展品”中展示。
-          </p>
+          <div class="tips mt15">
+              <h2 class="f14 fb c000">参展产品</h2>
+              <p class="mt5">说明：<br/>
+                  产品分组：若没有产品分组，可不填写分组名；<br/>
+                  关于排序：请填写1以上的数字，序号越小越靠前；<br/>
+                  推荐：您可以勾选热门产品进行推荐，所推荐的产品将在您展台的“推荐展品”中展示。</p>
+
+          </div>
 
             <form action="" method="post" class="mt30">
-                <h3 class="f14 c000 fb pl10">展台推荐：<a href="javascript:open_window('addProduct_win.html',544,640)"  class="btn_grey92">添加产品</a></h3>
+                <h3 class="f14 c000 pl10">展台推荐：<a href="javascript:open_window('addProduct_win.html',544,640)"  class="btn_grey92">添加产品</a></h3>
                 <ul class="atlas-list mt20 clearfix pl10">
                     <li>
                         <img src="images/logo100.gif" alt="">
@@ -178,7 +180,7 @@
                     </li>
                 </ul>
                 <ul class="group-list mt40 pl10">
-                    <li><label class="f14 c000 fb">产品分组一：</label><input type="text" value="输入分组名"><a href="add_product.html" target="_blank" class="btn_grey92 ml20">添加产品</a></li>
+                    <li><label class="f14 c000">产品分组：</label><input type="text" value="输入分组名"><a href="add_product.html" target="_blank" class="btn_grey92 ml20">添加产品</a></li>
                 </ul>
                 <h3 class="f14 c000 fb group"></h3>
                 <ul class="atlas-list mt20 clearfix pl10">
@@ -303,12 +305,10 @@
                         </div>
                     </li>
                 </ul>
-                <div class="add-proGroup mt50 pl10">
-                    <a href="#" class="f14 c06f_link fb">+ 增加产品分组</a>
-                    <ul class="group-list mt30 pb30">
-                        <li><label class="f14 c000 fb">产品分组二：</label><input type="text" value="输入分组名"><a href="add_product.html" target="_blank" class="btn_grey92 ml20">添加产品</a><a
-                                href="#" class="remove-group">移除分组</a></li>
-                    </ul>
+                <div class="add-proGroup mt50 pl10 pb30">
+                    <ul class="group-list mt30 pb30"></ul>
+                    <a href="javascript:;" class="f14 c06f_link fb" id="add_proGroup_btn">+ 增加产品分组</a>
+
                 </div>
                 <p class="mt50" style="margin-left:179px;">
                     <a href="company_info.html" class="btn_grey113_nodel fl mr20" style="color:#318deb;font-size: 16px;">上一步</a>
