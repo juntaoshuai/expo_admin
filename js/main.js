@@ -1,7 +1,7 @@
 $(function(){
     //菜单展开收缩
     $(".main_left li h3").click(function(){
-        $(this).find("span").toggleClass("arrow-down").parents("h3").next("dl").slideToggle();
+        $(this).find("span").toggleClass("arrow-down").closest("h3").next("dl").slideToggle();
     });
     //菜单选中
     $(".main_left li .sub-item").click(function(){
