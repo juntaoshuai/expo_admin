@@ -5,12 +5,16 @@
     <meta name="keywords" content="" />
     <meta name="Copyright" content="" />
     <meta name="description" content="" />
-    <title>展位一--OFweek在线展会后台管理</title>
+    <title>展位一--展商后台管理</title>
     <link rel="stylesheet" type="text/css" href="css/base.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/layer/layer.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+
+
 
 </head>
 
@@ -47,30 +51,29 @@
                         <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
                     </tr>
                 </table>
-
-            <form action="" method="post">
+            <form action="#" method="post" id="setBoothForm">
                 <ul class="set_info pt30 pl10 set_booth">
                     <li>
                         <b class="name fn"><span class="red">* </span>给您的展位起一个名称：</b>
-                        <div class="set-r fl">
-                            <input class="txt txt318" id="pro_name" maxlength="60" type="text" value="" name="name">
+                        <div class="set-r fl" style="width:516px;">
+                            <input class="txt txt318" id="pro_name" maxlength="15" type="text" value="" name="boothname">
                             <p class="c999 lh24 f12">这个名称是给您自己看的，以便于参展时选择展位；展位名称不超过15个汉字，例如：太阳能光伏</p>
                         </div>
                     </li>
                     <li class="mt25">
                         <b class="name fn"><span class="red">* </span>新选择客服帐号：</b>
                         <div class="fl col-account">
-                            <input type="checkbox" name="" class="chk">
+                            <input type="checkbox" name="account" class="chk">
                             <label class="">罗雨晴</label>
-                            <input type="checkbox" name="" class="chk">
+                            <input type="checkbox" name="account" class="chk">
                             <label>罗依凡</label>
-                            <input type="checkbox" name=""  class="chk">
+                            <input type="checkbox" name="account"  class="chk">
                             <label>吴维栋</label>
-                            <input type="checkbox" name=""  class="chk">
+                            <input type="checkbox" name="account"  class="chk">
                             <label>罗雨晴</label>
-                            <input type="checkbox" name=""  class="chk">
+                            <input type="checkbox" name="account"  class="chk">
                             <label>罗依凡</label>
-                            <input type="checkbox" name=""  class="chk">
+                            <input type="checkbox" name="account"  class="chk">
                             <label>吴维栋</label>
                             <a href="#" class="blue2">设置客服</a>
                         </div>
@@ -78,7 +81,7 @@
                     <li class="mt25">
                         <b class="name fn"><span class="red">* </span>多媒体区播放类型：</b>
                         <div class="fl lh30">
-                            <input type="radio" name="ptype" value="0" checked="checked" >
+                            <input type="radio" name="ptype" value="0" >
                             <label class="">视频</label>
                             <input type="radio" name="ptype" value="1" >
                             <label>图集</label>

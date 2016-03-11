@@ -78,7 +78,7 @@ $(function(){
     (function(){
         //清空文本框提示文字和输入文字变黑色
         jQuery.clearTxt=function(obj){
-            $(obj).focus(function(){
+            $(obj).on('focus',function(){
                     if($(this).val()==this.defaultValue){
                         $(this).val("");
                     }

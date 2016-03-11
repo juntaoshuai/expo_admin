@@ -5,15 +5,15 @@
     <meta name="keywords" content="" />
     <meta name="Copyright" content="" />
     <meta name="description" content="" />
-    <title>展位一--OFweek在线展会后台管理</title>
+    <title>展位一--展商后台管理</title>
     <link rel="stylesheet" type="text/css" href="css/base.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/layer/layer.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
 </head>
-
 <body>
 <!-- header start -->
 <iframe scrolling="no" frameborder="0" width="100%" height="106" src="header.html"></iframe>
@@ -47,11 +47,14 @@
                     <td width="12%"><input type="button" value="资料确认" class="fr mr7 btn_orangea" id="file_confirm"></td>
                 </tr>
             </table>
-            <form method="post" id="boothBusinessCardForm" action="/exhibitor/booth/businessCard/save.xhtml" novalidate="novalidate">
+            <form method="post" id="boothBusinessCardForm" action="" novalidate="novalidate">
 
                 <input type="hidden" name="nonce" value="eLAs2f"><input type="hidden" name="ak" value="6E448EC14FDB62F028F5D709C1774C43163623CF">
                 <input type="hidden" value="941" name="id">
                 <input type="hidden" id="boothId" value="1001" name="boothId">
+                <div class="second-title mt30 ml40">
+                    <h3>公司名片</h3>
+                </div>
                 <p class="gray ml30 mt20">
                     <span class="red">* </span> 如果贵公司希望在展台放置电子名片供所有观众查阅，请勾选“显示名片”后设置名片信息。由于所有观众均可收藏名片，请谨慎填写。
                 </p>
@@ -67,11 +70,11 @@
                         <li class="mt25">
                             <b class="name fn"><font class="red">* </font>地址：</b>
                             <div class="pull_down floatleft font12 pull_down_gray">
-                                <select name="" id="country" class="mr13">
+                                <select name="" id="country" class="mr13" name="address.countryCode">
                                     <option value="zh_CN" selected>中国</option>
                                     <option value="-1" >中国以外地区</option>
                                 </select>
-                                <select name="" id="province">
+                                <select name="" id="province" name="address.provinceCode">
                                     <option value="CNANH" >安徽</option>
                                     <option value="CNBEI" >北京 </option>
                                     <option value="CNFUJ" >福建</option>

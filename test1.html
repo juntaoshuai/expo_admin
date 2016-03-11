@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript">
+        var url="http://www.ieduchina.com/index.php?m=content&c=hunter&a=search&district_cn=深圳"
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = decodeURI(url).substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        alert(getQueryString("m"))
+    </script>
+</head>
+<body>
+
+</body>
+</html>
