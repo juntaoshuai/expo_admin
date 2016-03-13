@@ -4,16 +4,13 @@
 <head>
     <title>Title</title>
     <script type="text/javascript">
-        var url="http://www.ieduchina.com/index.php?m=content&c=hunter&a=search&district_cn=深圳"
-        function getQueryString(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-            var r = decodeURI(url).substr(1).match(reg);
-            if (r != null) return unescape(r[2]); return null;
-        }
-        alert(getQueryString("m"))
+      
     </script>
+    <style>
+        input:hover{background: #f00;}
+    </style>
 </head>
 <body>
-
+<input type="button" value="提交">
 </body>
 </html>

@@ -1,4 +1,33 @@
 $(function(){
+    //IE8以下圆角
+
+    if($.browser.msie  && $.browser.version<9){
+        $.getScript("js/PIE.js", function(){
+            $('label.error').each(function() {
+                PIE.attach(this);
+            });
+            $('.booth-success a').each(function() {
+                PIE.attach(this);
+            });
+            $('.btn_blue150-i').each(function() {
+                PIE.attach(this);
+            });
+            $('.btn_blue150-a').each(function() {
+                PIE.attach(this);
+            });
+            $('.btn_grey150-i').each(function() {
+                PIE.attach(this);
+            });
+            $('.btn_grey150-a').each(function() {
+                PIE.attach(this);
+            });
+        });
+
+
+    }
+
+
+
     //菜单展开收缩
     $(".main_left li h3").click(function(){
         $(this).find("span").toggleClass("arrow-down").closest("h3").next("dl").slideToggle();
@@ -66,11 +95,14 @@ $(function(){
         $("#add_proGroup_btn").click(function(){
             i++==20?$(this).hide():"";
 
-           var html='<li class="mt10"><label class="f14 c000">产品分组: </label><input type="text" value="输入分组名"><a href="add_product.html" target="_blank" class="btn_grey92 ml20">添加产品</a><a href="javascript:;" class="remove-group">移除分组</a></li>';
+           var html='<li class="mt10"><label class="f14 c000">产品分组: </label><input type="text" value="输入分组名"><a href="javascript:open_window("../addProduct_win.html",580,640)" target="_blank" class="btn_grey92 ml20">添加产品</a><a href="javascript:;" class="remove-group">移除分组</a></li>';
            $(html).appendTo($(this).prev());
 
         });
         $(".remove-group").live('click',function(){
+            if($(this).closest("ul").find("li").length<=19){
+                $("#add_proGroup_btn").show();
+            }
             $(this).closest("li").remove();
         })
     })();
@@ -78,23 +110,26 @@ $(function(){
     (function(){
         //清空文本框提示文字和输入文字变黑色
         jQuery.clearTxt=function(obj){
-            $(obj).on('focus',function(){
+            $(obj).live({
+                focus:function(){
                     if($(this).val()==this.defaultValue){
                         $(this).val("");
                     }
-                })
-                .blur(function(){
+                },
+                blur:function(){
                     if($(this).val()==""){
                         $(this).css("color","#999").val(this.defaultValue);
                     }
-                });
+                }
+            });
         }
+
+
         $.clearTxt(".txt");
         $.clearTxt(" .group-list input");
 
         jQuery.chageFontColor=function(obj){
-            $(obj).on("input propertychange",function(){
-                // alert(1242);
+            $(obj).live("input propertychange",function(){
                 $(this).css("color","#000");
             });
         }
@@ -145,9 +180,10 @@ function getCookie(key) {
 
 
 function open_window(url,width,height){
-    window.open(url,"subWnd","Toolbar=1,menubar=0,scrollbars=1,resizable=1,width="+width+",height="+height+",top=75,left=150");
+    window.open(url,"subWnd","Toolbar=1,menubar=0,scrollbars=1,resizable=0,width="+width+",height="+height+",top=75,left=411");
 
 }
+
 
 
 

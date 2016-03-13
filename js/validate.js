@@ -43,7 +43,7 @@ $(function () {
                     required:"请选择多媒体区播放类型"
                 }
             },
-        })
+        });
     //公司资料
     $("#comInfoForm").validate({
         debug:false,
@@ -87,16 +87,14 @@ $(function () {
         },
     })
 
-    jQuery.validator.addMethod("phoneRequired", function(value, element) {
-        var referenceElement = $(element).attr("reference");
-        var referenceValue = $(referenceElement).val();
-        if ($.trim(value) == "" && $.trim(referenceValue) == "") {
-            return false;
-        }
-        return true;
-    }, "座机电话必填！");
+    // 电话号码验证
+    jQuery.validator.addMethod("isPhone", function(value, element) {
+        var tel = /^([+]\d)*(\d*-\d*)+$/;
+        return this.optional(element) || (tel.test(value));
+    }, "请按格式正确填写您的电话号码。");
+
     $("#telephone").attr("reference", "#mobilePhone");
-    // 手机号码验证
+// 手机号码验证
     jQuery.validator.addMethod("isMobile", function(value, element) {
         var length = value.length;
         return this.optional(element)
@@ -107,17 +105,12 @@ $(function () {
         return this.optional( element ) || /^\s*\w+(?:\.{0,1}[\w-]+)*@[a-zA-Z0-9]+(?:[-.][a-zA-Z0-9]+)*\.[a-zA-Z]+\s*$/.test(value);
     }, '请输入正确的邮箱地址');
 
-
     // 展位名片
     $("#boothBusinessCardForm").validate({
         debug : false,
-       // errorClass : "error",
-      //  focusInvalid : true,
         onfocusout: function(element) {
             $(element).valid();
         },
-       // onsubmit : true,
-       // ignore : "[name='']",
         errorPlacement : function(error, element) {
             var name = $(element).attr("name");
             var tipElement = $("[id='tip_" + name + "']");
@@ -142,11 +135,11 @@ $(function () {
             },
             "contacts.email" : {
                 required : true,
-                laxEmail : true
+               laxEmail : true
             },
             "contacts.telephone" : {
+               required : true,
                 isPhone : true,
-                phoneRequired : true
             },
             "contacts.mobilePhone" : {
                 isMobile : true
@@ -178,17 +171,17 @@ $(function () {
                 required : "请输入您的邮箱"
             },
             "contacts.telephone" : {
-                required : "请输入您的联系电话"
+                required : "座机电话必填！"
             },
             "contacts.sex" : {
                 required : "请填写您的性别"
             },
             "address.countryCode" : {
-                required : "请选择国家地区"
+               required : "请选择国家地区"
             },
             "address.detail" : {
                 required : '请输入您的详细联系地址'
-            },
+            }
         }
     });
 
@@ -209,3 +202,5 @@ $(function () {
 
 
 });
+
+

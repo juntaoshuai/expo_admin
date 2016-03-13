@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="Copyright" content="" />
+    <meta name="description" content="" />
+    <title>选择产品--展商后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<!-- main start -->
+<div class="window-box windowBg-box">
+    <h3 class="win-title">选择背景</h3>
+    <div class="page-con">
+        <form action="" method="post">
+            <div class="bg-title mt30">
+                <h3>可选背景图</h3>
+            </div>
+            <ul class="bg_list mt20 clear">
+
+                <li>
+                    <h6>
+                        <img src="http://expo.ofweek.com/upload/booth/defaultBg/blue.jpg">
+                    </h6>
+                    <p class="pt10">
+                        <input checked="checked" class="radio_btn" type="radio" ismainimage="mainImage" value="" name="0" rowid="2581" boothid="1001">
+                        <span>当前</span>
+                    </p>
+                </li>
+                <li>
+                    <h6>
+                        <img src="http://expo.ofweek.com/upload/booth/defaultBg/green.jpg">
+                    </h6>
+                    <p class="pt10">
+                        <input class="radio_btn set_bg" type="radio" value="" name="0" rowid="2582" boothid="1001">
+                        <span class="blue">设为背景</span> <span class="ml20 del"></span>
+                    </p>
+                </li>
+
+                <li>
+                    <h6>
+                        <img src="http://expo.ofweek.com/upload/booth/defaultBg/red.jpg">
+                    </h6>
+                    <p class="pt10">
+                        <input class="radio_btn set_bg" type="radio" value="" name="0" rowid="2583" boothid="1001">
+                        <span class="blue">设为背景</span> <span class="ml20 del"></span>
+                    </p>
+                </li>
+                <li>
+                    <h6>
+                        <img src="http://expo.ofweek.com/upload/booth/defaultBg/yellow.jpg">
+                    </h6>
+                    <p class="pt10">
+                        <input class="radio_btn set_bg" type="radio" value="" name="0" rowid="2584" boothid="1001">
+                        <span class="blue">设为背景</span> <span class="ml20 del"></span>
+                    </p>
+                </li>
+                <li>
+                    <h6>
+                        <img src="http://expo.ofweek.com/upload/unknown/2015-11/12320.jpg">
+                    </h6>
+                    <p class="pt10">
+                        <input class="radio_btn set_bg" type="radio" value="" name="0" rowid="2585" boothid="1001">
+                        <span class="blue">设为背景</span> <span class="ml20 del"></span>
+                    </p>
+                </li>
+                <li>
+                    <h6 class="floatleft img158">
+                        <div id="bgImgDiv">
+                            <img src="http://expo.ofweek.com/exhibitor/booth/images/logo_mr.gif" id="bgImgBox">
+                        </div>
+                        <p id="tip_bgImgId" class=""></p>
+                    </h6>
+                    <div class="input_con">
+                        <object name="file" id="uploadBgImg" width="120" height="25" type="application/x-shockwave-flash" data="http://expo.ofweek.com/swf/fileupload.swf" style="visibility: visible;"><param name="wmode" value="opaque"><param name="flashvars" value="filetype=1&amp;sessionCredential=LPPA17&amp;onerror=uploadError&amp;onsuccess=uploadBgImgSuccess&amp;msgNo=12&amp;name=file&amp;sessionId=4192&amp;url=/files/upload.xhtml"></object>
+                        <script>swfobject.embedSWF('http://expo.ofweek.com/swf/fileupload.swf', 'uploadBgImg', '120', '25', '9', 'http://expo.ofweek.com/swf/expressInstall.swf', {"filetype":1,"sessionCredential":"LPPA17","onerror":"uploadError","onsuccess":"uploadBgImgSuccess","msgNo":12,"name":"file","sessionId":4192,"url":"/files/upload.xhtml"}, {"wmode":"opaque"}, {"name":"file","id":"uploadBgImg"});</script>
+                        <p class="pt10 lh20">最佳尺寸：1920*1200；<br>展台背景图设计请下载并参考<br><span class="blue"><a href="/exhibitor/booth/background/customBackgroundReference.png" target="_blank">展台自定义背景图设计参考图</a></span></p>
+                    </div>
+                </li>
+
+            </ul>
+            <input style="display: none" id="boothId" class="boothId" type="text" name="boothId" value="1001">
+        </form>
+    </div>
+</div>
+<!--right end -->
+<!-- main end -->
+
+</body>
+</html>
